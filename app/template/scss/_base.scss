@@ -34,6 +34,7 @@ html {
 
 
 body{
+	background: url(../images/bg.jpg) #fefefe;
 	@include flexbox;
 	@include font-size(1.4);
 	flex-flow: column;
@@ -172,7 +173,13 @@ em strong
 
 /* =header
 ---------------------------*/
-header{
+.header{
+	padding-top: 30px;
+	&__contacts{
+		.tel{
+			font-size: 24px;
+		}
+	}
 }
 
 /* =/header

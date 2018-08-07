@@ -1,12 +1,18 @@
 @import "bootstrap/functions";
 @import "bootstrap/variables";
+@import "bootstrap/mixins/hover";
 @import "bootstrap/reboot";
 @import "bootstrap/mixins/breakpoints";
 @import "bootstrap/mixins/grid-framework";
 @import "bootstrap/mixins/grid";
+@import "bootstrap/mixins/text-truncate";
+@import "bootstrap/mixins/text-emphasis";
+@import "bootstrap/mixins/text-hide";
 @import "bootstrap/grid";
-@import "bootstrap/utilities/display";
-@import "bootstrap/utilities/flex";
+@import "bootstrap/utilities";
+// @import "bootstrap/utilities/display";
+// @import "bootstrap/utilities/flex";
+// @import "bootstrap/utilities/text";
 
 
 // @import 'grid';
