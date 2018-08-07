@@ -1,13 +1,13 @@
 /*** reset ***********/
-html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
-header, section, footer, aside, nav, article {display:block}
+// html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
+// header, section, footer, aside, nav, article {display:block}
 ul{list-style:none}
 $color1:#000;
 $color2:#fff;
+$color3:#333;
+$color4:#064ca1;
+$color5:#ed1b24;
 
-$color3:#f4f4f4;
-$color4:#1a237e;
-$color5:#666;
 $color6:#ff5722;
 $color7:#80bbde;
 $color8:#292929;
@@ -40,6 +40,9 @@ body{
 	flex-flow: column;
 	font-display: swap;
 	height: 100vh;
+
+	font-family: "SegoeUIItalic";
+	color: $color3;
 }
 
 html, body{
@@ -174,14 +177,56 @@ em strong
 /* =header
 ---------------------------*/
 .header{
-	padding-top: 30px;
+	padding-top: 20px;
+	.mainnav{
+		margin: 0;
+		padding: 0;
+		li{
+			margin: 5px 0;
+		}
+		a{
+			color: $color1;
+			border-bottom: 1px dashed rgba(0,0,0,0);
+			&:hover{
+				border-bottom: 1px dashed $color4;
+				color: $color4;
+				text-decoration: none;
+			}
+		}
+	}
+
 	&__contacts{
 		.tel{
 			font-size: 24px;
+			color: $color4;
+			span{
+				color: $color1;
+			}
+			&:hover{
+				text-decoration: none;
+			}
 		}
+	}
+	p{
+		line-height: 1.4;
+		margin-bottom: 0;
 	}
 }
 
+.callback{
+	background: none;
+	border-bottom: 1px dashed rgba(0,0,0,0);
+	border: none;
+	color: $color5;
+	cursor: pointer;
+	padding: 0;
+	margin-top: 5px;
+	display: inline-block;
+	height: 25px;
+	&:hover{
+		border-bottom: 1px dashed;
+	}
+}
 /* =/header
 ---------------------------*/
 

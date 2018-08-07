@@ -1433,14 +1433,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 */
 /*** reset ***********/
-html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-header, section, footer, aside, nav, article {
-  display: block; }
-
 ul {
   list-style: none; }
 
@@ -1469,7 +1461,9 @@ body {
   font-size: 1.4rem;
   flex-flow: column;
   font-display: swap;
-  height: 100vh; }
+  height: 100vh;
+  font-family: "SegoeUIItalic";
+  color: #333; }
 
 html, body {
   height: 100%; }
@@ -1559,20 +1553,53 @@ em strong {
   position: absolute; }
 
 .form-control {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #333;
   border-radius: 0;
   margin-top: 0.6rem;
   font-size: 16px; }
   .form-control:focus, .form-control:active {
-    border-color: #666;
+    border-color: #ed1b24;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3); }
 
 /* =header
 ---------------------------*/
 .header {
-  padding-top: 30px; }
+  padding-top: 20px; }
+  .header .mainnav {
+    margin: 0;
+    padding: 0; }
+    .header .mainnav li {
+      margin: 5px 0; }
+    .header .mainnav a {
+      color: #000;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+      .header .mainnav a:hover {
+        border-bottom: 1px dashed #064ca1;
+        color: #064ca1;
+        text-decoration: none; }
   .header__contacts .tel {
-    font-size: 24px; }
+    font-size: 24px;
+    color: #064ca1; }
+    .header__contacts .tel span {
+      color: #000; }
+    .header__contacts .tel:hover {
+      text-decoration: none; }
+  .header p {
+    line-height: 1.4;
+    margin-bottom: 0; }
+
+.callback {
+  background: none;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0);
+  border: none;
+  color: #ed1b24;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 5px;
+  display: inline-block;
+  height: 25px; }
+  .callback:hover {
+    border-bottom: 1px dashed; }
 
 /* =/header
 ---------------------------*/
