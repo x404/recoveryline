@@ -1553,7 +1553,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .qcart a:before, .menucatalog:before, .sisea-search-form .submit:before {
+.before, .qcart a:before, .menucatalog:before, .sisea-search-form .submit:before, .share:before {
   content: "";
   display: block;
   position: absolute; }
@@ -1706,6 +1706,8 @@ em strong {
   background: #f0f0f0;
   margin-top: 2rem;
   padding: 2rem 0 2.5rem 0; }
+  .bottom .container {
+    position: relative; }
   .bottom .title {
     font-family: "SegoeUIBoldItalic";
     margin-top: .3rem;
@@ -1723,6 +1725,26 @@ em strong {
         text-decoration: none; }
   .bottom ul {
     padding-left: 0; }
+
+#totop {
+  background: #f0f0f0;
+  border: none;
+  height: 48px;
+  position: absolute;
+  right: 0;
+  top: -68px;
+  width: 70px;
+  cursor: pointer; }
+  #totop svg {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: .3s; }
+  #totop line {
+    stroke: #064ca1;
+    stroke-width: 3; }
+  #totop:hover svg {
+    top: 10px; }
 
 .footer {
   background: #064ca1;
@@ -1793,6 +1815,16 @@ em strong {
   -webkit-transform: scale(1);
   transform: scale(1); }
 
+.share {
+  margin-top: 3.4rem;
+  padding-top: 1.8rem;
+  position: relative; }
+  .share:before {
+    border-top: 1px solid #ccc;
+    width: 90%;
+    top: 0;
+    left: 0; }
+
 /* =services
 ---------------------------*/
 .services {
@@ -1813,11 +1845,11 @@ em strong {
       .service__cell a:hover img {
         filter: none; }
   .service__cell img {
-    transition: .3s filter;
-    filter: grayscale(1) brightness(2);
-    display: flex;
     align-self: center;
-    margin-right: 2.2rem; }
+    display: flex;
+    filter: grayscale(1) brightness(2);
+    margin-right: 2.2rem;
+    transition: .3s filter; }
 
 .slide img {
   height: auto;

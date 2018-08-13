@@ -373,6 +373,9 @@ em strong
 	background: $color6;
 	margin-top: 2rem;
 	padding: 2rem 0 2.5rem 0;
+	.container{
+		position: relative;
+	}
 	.title{
 		font-family: "SegoeUIBoldItalic";
 		margin-top: .3rem;
@@ -394,6 +397,33 @@ em strong
 	}
 	ul{
 		padding-left: 0;
+	}
+}
+
+
+#totop{
+	background: $color10;
+	border: none;
+	height: 48px;
+	position: absolute;
+	right: 0;
+	top: -68px;
+	width: 70px;
+	cursor: pointer;
+	svg{
+		position: absolute;
+		top: 15px;
+		left: 20px;
+		transition: .3s;
+	}
+	line {
+		stroke: $color4;
+		stroke-width: 3;
+	}
+	&:hover{
+		svg{
+			top: 10px;
+		}
 	}
 }
 
@@ -479,4 +509,20 @@ em strong
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+
+
+
+.share{
+	margin-top: 3.4rem;
+	padding-top: 1.8rem;
+	position: relative;
+	&:before{
+		@extend .before;
+		border-top: 1px solid $color9;
+		width: 90%;
+		top: 0;
+		left: 0;
+
+	}
 }

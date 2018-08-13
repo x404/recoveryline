@@ -24,11 +24,11 @@
 			}
 		}
 		img{
-			transition: .3s filter;
-			filter: grayscale(1) brightness(2);
-			display: flex;
 			align-self: center;
+			display: flex;
+			filter: grayscale(1) brightness(2);
 			margin-right: 2.2rem;
+			transition: .3s filter;
 		}
 	}
 }
