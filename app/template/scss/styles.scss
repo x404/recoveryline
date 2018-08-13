@@ -9,6 +9,8 @@
 @import "bootstrap/mixins/text-emphasis";
 @import "bootstrap/mixins/text-hide";
 @import "bootstrap/grid";
+@import "border-radius";
+@import "card";
 @import "bootstrap/utilities";
 // @import "bootstrap/utilities/display";
 // @import "bootstrap/utilities/flex";
@@ -16,6 +18,7 @@
 
 
 // @import 'grid';
+@import 'fonts';
 @import 'colors';
 @import 'elements';
 @import 'flex';
@@ -31,6 +34,7 @@
 // @import 'modal';
 // @import 'nav';
 // @import 'transitions';
+@import 'catalog'; 
 @import 'mobmenu'; 
 @import 'browsers';
 @import 'responsive-base';

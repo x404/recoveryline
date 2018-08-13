@@ -9,6 +9,17 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$icon-cart-2-name: 'icon-cart-2';
+$icon-cart-2-x: 33px;
+$icon-cart-2-y: 0px;
+$icon-cart-2-offset-x: -33px;
+$icon-cart-2-offset-y: 0px;
+$icon-cart-2-width: 29px;
+$icon-cart-2-height: 21px;
+$icon-cart-2-total-width: 62px;
+$icon-cart-2-total-height: 42px;
+$icon-cart-2-image: '../images/sprite.png';
+$icon-cart-2: (33px, 0px, -33px, 0px, 29px, 21px, 62px, 42px, '../images/sprite.png', 'icon-cart-2', );
 $icon-cart-name: 'icon-cart';
 $icon-cart-x: 0px;
 $icon-cart-y: 0px;
@@ -16,26 +27,26 @@ $icon-cart-offset-x: 0px;
 $icon-cart-offset-y: 0px;
 $icon-cart-width: 33px;
 $icon-cart-height: 25px;
-$icon-cart-total-width: 50px;
-$icon-cart-total-height: 25px;
+$icon-cart-total-width: 62px;
+$icon-cart-total-height: 42px;
 $icon-cart-image: '../images/sprite.png';
-$icon-cart: (0px, 0px, 0px, 0px, 33px, 25px, 50px, 25px, '../images/sprite.png', 'icon-cart', );
+$icon-cart: (0px, 0px, 0px, 0px, 33px, 25px, 62px, 42px, '../images/sprite.png', 'icon-cart', );
 $icon-search-name: 'icon-search';
-$icon-search-x: 33px;
-$icon-search-y: 0px;
-$icon-search-offset-x: -33px;
-$icon-search-offset-y: 0px;
+$icon-search-x: 0px;
+$icon-search-y: 25px;
+$icon-search-offset-x: 0px;
+$icon-search-offset-y: -25px;
 $icon-search-width: 17px;
 $icon-search-height: 17px;
-$icon-search-total-width: 50px;
-$icon-search-total-height: 25px;
+$icon-search-total-width: 62px;
+$icon-search-total-height: 42px;
 $icon-search-image: '../images/sprite.png';
-$icon-search: (33px, 0px, -33px, 0px, 17px, 17px, 50px, 25px, '../images/sprite.png', 'icon-search', );
-$spritesheet-width: 50px;
-$spritesheet-height: 25px;
+$icon-search: (0px, 25px, 0px, -25px, 17px, 17px, 62px, 42px, '../images/sprite.png', 'icon-search', );
+$spritesheet-width: 62px;
+$spritesheet-height: 42px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($icon-cart, $icon-search, );
-$spritesheet: (50px, 25px, '../images/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($icon-cart-2, $icon-cart, $icon-search, );
+$spritesheet: (62px, 42px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //

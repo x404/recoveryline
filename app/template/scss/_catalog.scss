@@ -1,0 +1,120 @@
+.card{
+	border: 1px solid $color11;
+	width: 20rem;
+	padding-top: 2.7rem;
+	&-img{
+		display: block;
+		width: auto;
+		margin: auto;
+	}
+	&-body{
+		text-align: center;
+	}
+
+	&-title{
+		color: $color4;
+		font-weight: normal;
+		font-family: "SegoeUIRegular";
+		text-transform: uppercase;
+	}
+
+	&-text{
+		color: $color12;
+	}
+
+	&-price{
+		@extend .bold;
+		color: $color7;
+		font-size: 2.4rem;
+	}
+	$h: 30px;
+	&-bottom{
+		height: $h;
+	}
+	&-link{
+		@extend .flex-center;
+		background-color: $color11;
+		color: $color12;
+		font-family: "SegoeUIBoldItalic";
+		font-size: 1.2rem;
+		height: 100%;
+		text-align: center;
+		transition: .3s;
+		width: 11rem;
+		&:hover{
+			background-color: $color4;
+			color: $color2;
+		}
+	}
+	&-form{
+		display: flex;
+		flex-grow: 1;			
+	}
+	.to-cart{
+		background-color: $color4;
+		border: none;
+		cursor: pointer;
+		display: block;
+		flex-grow: 1;	
+		height: $h;
+		position: relative;
+		&:before{
+			@extend .before;
+			@include sprite($icon-cart-2);
+			left: 50%;
+			margin-left: -14px;
+			top: 4px;
+		}
+	}
+
+	&-label{
+		left: 1px;
+		position: absolute;
+		top: 7px;
+	}
+
+	.label{
+		$h: 22px;
+		color: $color2;
+		font-family: "SegoeUIItalic";
+		margin-bottom: .2rem;
+		position: relative;
+		text-align: center;
+		width: 35px;
+		height: $h;
+		&:after{
+			@extend .before;
+			height: $h;
+			width: 5px;
+			right: -5px;
+			top: 0;
+		}
+		&-sale{
+			background-color: #ea1100;
+			&:after{
+				background: url(../images/label-sale.png) no-repeat left top;
+			}
+		}
+		&-new{
+			background-color: #40ab48;
+			&:after{
+				background: url(../images/label-new.png) no-repeat left top;
+			}
+		}
+		&-hit{
+			background-color: #0099ff;
+			&:after{
+				background: url(../images/label-hit.png) no-repeat left top;
+			}
+		}
+	}
+}
+
+
+.goods{
+	margin-top: 1.6rem;
+	.rur{
+		color: $color4;
+		font-weight: bold;
+	}
+}
