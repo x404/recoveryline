@@ -1472,12 +1472,22 @@ input::-moz-focus-inner {
   -webkit-flex: 1;
   flex: 1; }
 
+.flex-center, .producer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /*** standart classes *****/
+p {
+  margin-bottom: .6rem; }
+
 a {
   color: #020000; }
 
 h1 {
-  font-size: 2.5rem; }
+  font-size: 1.8rem;
+  font-family: "SegoeUIBold";
+  font-weight: normal; }
 
 h2 {
   font-size: 2.4rem; }
@@ -1547,6 +1557,11 @@ em strong {
   content: "";
   display: block;
   position: absolute; }
+
+.title {
+  color: #064ca1;
+  padding-bottom: 1rem;
+  text-transform: uppercase; }
 
 /* =header
 ---------------------------*/
@@ -1750,9 +1765,11 @@ em strong {
 .service__cell {
   color: #808080; }
   .service__cell a {
-    transition: .3s color;
-    display: flex; }
+    color: #808080;
+    display: flex;
+    transition: .3s color; }
     .service__cell a:hover {
+      color: #064ca1;
       text-decoration: none; }
       .service__cell a:hover img {
         filter: none; }
@@ -1771,6 +1788,30 @@ em strong {
   bottom: 10px; }
 
 /* =/services
+---------------------------*/
+.recommendation {
+  padding-top: 3rem; }
+
+/* =producers
+---------------------------*/
+.producers {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 2.5rem;
+  padding: 2.5rem 0; }
+
+.producer__link {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  height: 86px;
+  transition: .3s border-color;
+  width: 198px; }
+  .producer__link img {
+    margin: auto; }
+  .producer__link:hover {
+    border-color: #064ca1; }
+
+/* =/producers
 ---------------------------*/
 /* =mobile-menu
 ---------------------------*/
