@@ -1,0 +1,47 @@
+/* =services
+---------------------------*/
+.services{
+	background: $color8;
+	padding: 1.2rem 0;
+	&__row{
+		justify-content: space-between;
+	}
+}
+
+.service{
+	&__cell{
+		color: $color7;
+		a{
+			transition: .3s color;
+			display: flex;			
+			&:hover{
+				text-decoration: none;
+				img{
+					filter: none;
+				}
+			}
+		}
+		img{
+			transition: .3s filter;
+			filter: grayscale(1) brightness(2);
+			display: flex;
+			align-self: center;
+			margin-right: 2.2rem;
+		}
+	}
+}
+
+.slide{
+	img{
+		height: auto;
+		width: 100%;
+	}
+}
+
+#home-carousel{
+	.slick-dots{
+		bottom: 10px;
+	}
+}
+/* =/services
+---------------------------*/
