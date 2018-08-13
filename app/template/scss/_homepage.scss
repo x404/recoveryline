@@ -59,7 +59,7 @@
 ---------------------------*/
 .producers{
 	border-top: 1px solid $color9;
-	border-bottom: 1px solid $color9;
+	// border-bottom: 1px solid $color9;
 	margin-top: 2.5rem;
 	padding: 2.5rem 0;
 }
@@ -81,3 +81,61 @@
 }
 /* =/producers
 ---------------------------*/
+
+
+
+
+/* =useful
+---------------------------*/
+.useful{
+	.media{
+		&__inner{
+			margin: 0 auto;
+		}
+	}
+}
+/* =useful
+---------------------------*/
+
+
+.media{
+	&__inner{
+		height: 158px;
+		overflow: hidden;
+		position: relative;
+		width: 266px;
+	}
+	&__link{
+		color: $color2 !important;
+		display: block;
+		.media__pic{
+			img{
+				vertical-align: top;
+				transition: .3s;
+			}
+		}
+
+		&:hover{
+			.media__pic img{
+				filter: brightness(50%);
+				transform: scale(1.1)
+			}
+		}
+	}
+	&__title{
+		@extend .flex-center;
+		text-transform: uppercase;
+		font-size: 1.8rem;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		padding: 0 4rem;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+
+.articles__carousel{
+	padding-top: 1rem;
+}
