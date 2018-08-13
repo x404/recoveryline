@@ -376,7 +376,7 @@ em strong
 	.container{
 		position: relative;
 	}
-	.title{
+	.title-sm{
 		font-family: "SegoeUIBoldItalic";
 		margin-top: .3rem;
 		white-space: nowrap;
@@ -397,6 +397,66 @@ em strong
 	}
 	ul{
 		padding-left: 0;
+	}
+
+	.address{
+		padding-right: 5rem;
+		address{
+			margin-top: 1rem;
+			margin-bottom: 0;
+		}
+	}
+
+	.tel{
+		color: $color4;
+		font-size: 1.6rem;
+		span{
+			color: $color1;
+		}
+	}
+
+	.email,
+	.tel{
+		border-bottom: 1px dashed rgba(255,255,255,0);		
+		&:hover{
+			text-decoration: none;
+			border-bottom: 1px dashed $color4;
+		}
+	}
+
+	.callback{
+		&:hover{
+			border-bottom: 1px dashed #ed1b24
+		}
+	}
+
+}
+
+.social{
+	a{
+		display: inline-block;
+		margin-bottom: 1rem;
+		opacity: .7;
+		transition: .3s opacity;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	&__box{
+		padding: 1.2rem 2rem 0;
+	}
+}
+
+.box-w{
+	background: $color2;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	height: 35px;
+	margin-bottom: .8rem;
+	width: 61px;
+	@extend .flex-center;
+	img{
+		display: block;
 	}
 }
 
@@ -436,7 +496,13 @@ em strong
 		position: relative;
 	}
 	a{
-		color: currentColor
+		color: currentColor;
+		border-bottom: 1px dashed;
+		transition: .3s;
+		&:hover{
+			text-decoration: none;
+			border-bottom-color: rgba(0,0,0,0);
+		}
 	}
 }
 
@@ -449,7 +515,7 @@ em strong
 }
 
 .kreotif{
-	padding-right: 140px;
+	margin-right: 140px;
 }
 
 .kreotif-logo{

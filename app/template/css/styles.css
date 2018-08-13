@@ -1472,7 +1472,7 @@ input::-moz-focus-inner {
   -webkit-flex: 1;
   flex: 1; }
 
-.flex-center, .producer__link, .media__title {
+.flex-center, .box-w, .producer__link, .media__title {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -1708,7 +1708,7 @@ em strong {
   padding: 2rem 0 2.5rem 0; }
   .bottom .container {
     position: relative; }
-  .bottom .title {
+  .bottom .title-sm {
     font-family: "SegoeUIBoldItalic";
     margin-top: .3rem;
     white-space: nowrap; }
@@ -1725,6 +1725,46 @@ em strong {
         text-decoration: none; }
   .bottom ul {
     padding-left: 0; }
+  .bottom .address {
+    padding-right: 5rem; }
+    .bottom .address address {
+      margin-top: 1rem;
+      margin-bottom: 0; }
+  .bottom .tel {
+    color: #064ca1;
+    font-size: 1.6rem; }
+    .bottom .tel span {
+      color: #000; }
+  .bottom .email,
+  .bottom .tel {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0); }
+    .bottom .email:hover,
+    .bottom .tel:hover {
+      text-decoration: none;
+      border-bottom: 1px dashed #064ca1; }
+  .bottom .callback:hover {
+    border-bottom: 1px dashed #ed1b24; }
+
+.social a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  opacity: .7;
+  transition: .3s opacity; }
+  .social a:hover {
+    opacity: 1; }
+
+.social__box {
+  padding: 1.2rem 2rem 0; }
+
+.box-w {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  height: 35px;
+  margin-bottom: .8rem;
+  width: 61px; }
+  .box-w img {
+    display: block; }
 
 #totop {
   background: #f0f0f0;
@@ -1754,7 +1794,12 @@ em strong {
     padding: 1.8rem 0;
     position: relative; }
   .footer a {
-    color: currentColor; }
+    color: currentColor;
+    border-bottom: 1px dashed;
+    transition: .3s; }
+    .footer a:hover {
+      text-decoration: none;
+      border-bottom-color: rgba(0, 0, 0, 0); }
 
 .visually-hidden {
   position: absolute;
@@ -1764,7 +1809,7 @@ em strong {
   clip: rect(0 0 0 0); }
 
 .kreotif {
-  padding-right: 140px; }
+  margin-right: 140px; }
 
 .kreotif-logo {
   background: #fff;
@@ -1841,7 +1886,8 @@ em strong {
     transition: .3s color; }
     .service__cell a:hover {
       color: #064ca1;
-      text-decoration: none; }
+      text-decoration: none;
+      border-bottom: none; }
       .service__cell a:hover img {
         filter: none; }
   .service__cell img {
@@ -1879,7 +1925,7 @@ em strong {
   .producer__link img {
     margin: auto; }
   .producer__link:hover {
-    border-color: #064ca1; }
+    border: 1px solid #064ca1; }
 
 /* =/producers
 ---------------------------*/
@@ -1902,9 +1948,11 @@ em strong {
   .media__link .media__pic img {
     vertical-align: top;
     transition: .3s; }
-  .media__link:hover .media__pic img {
-    filter: brightness(50%);
-    transform: scale(1.1); }
+  .media__link:hover {
+    border-bottom: none; }
+    .media__link:hover .media__pic img {
+      filter: brightness(50%);
+      transform: scale(1.1); }
 
 .media__title {
   text-transform: uppercase;
