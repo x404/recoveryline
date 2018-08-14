@@ -1935,6 +1935,9 @@ em strong {
   display: block;
   position: absolute; }
 
+.form-control.error {
+  border-color: red !important; }
+
 .title {
   color: #064ca1;
   padding-bottom: 1rem;
@@ -2249,6 +2252,9 @@ em strong {
 
 .policy {
   margin-top: 2rem; }
+
+label.error {
+  display: none !important; }
 
 .user-access + label {
   cursor: pointer;

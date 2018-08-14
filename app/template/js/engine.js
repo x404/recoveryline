@@ -55,8 +55,98 @@ $(document).ready(function(){
 		return false;
 	});
 
+	var thankcallback = '<div class="thank text-center"><p>В ближайщее время с вами свяжутся наши менеджеры для уточнения всех деталей</p></div>';
+	var thankfaq = '<div class="thank text-center"><p>Ваш вопрос отправлен</p></div>';
+	var thankreview = '<div class="thank text-center"><p>Ваш отзыв отправлен</p></div>';
+	var errorTxt = 'Форма не отправлена. Попробуйте позже.';
+	// validation forms
+	$('#callback-form').validate({
+        // rules : {
+        //     tel:{validphone:true}           
+        // },
+		submitHandler: function(form){
+			var strSubmit=$(form).serialize();
+			// $(form).find('fieldset').hide();
+			$(form).append('<div class="sending">Идет отправка ...</div>');
+
+			$.ajax({
+				type: "POST",
+				url: $(form).attr('action'),
+				data: strSubmit,
+				success: function(){
+					document.querySelector('.sending').remove();
+					$(form).append(thankcallback);
+					startClock('callback-form');
+				},
+				error: function(){
+					alert(errorTxt);
+					$(form).find('fieldset').show();
+					$('.sending').remove();
+				}
+			})
+			.fail(function(error){
+				alert(errorTxt);
+			});
+		}
+	});
+
 });
 	
+
+var timer,
+	sec = 3;
+
+
+function showTime(sendform){
+	sec = sec-1;
+	if (sec <=0) {
+		stopClock();
+
+				modal = $("#" + sendform).closest('.modal');
+				modal.modal('hide');
+				modal.find('.thank').remove();
+				modal.find('.form-control, textarea').val('');
+				
+		// switch (sendform){
+		// 	case 'callback-form':
+		// 		modal = $("#" + sendform).closest('.modal');
+		// 		modal.modal('hide');
+		// 		modal.find('.thank').remove();
+		// 		modal.find('.form-control, textarea').val('');
+		// 		break;
+		// 	case 'addfaq-form':
+		// 		modal = $("#" + sendform).closest('.modal');
+		// 		modal.modal('hide');
+		// 		modal.find('.thank').remove();
+		// 		modal.find('.form-control, textarea').val('');
+		// 		break;
+		// 	case 'cart-form':
+		// 		$('.cart .thank').fadeOut('normal',function(){
+		// 			$('.cart .thank').remove();
+		// 			// $('.cart .form-control, .cart textarea').val('');
+		// 			// $('.cart__form fieldset').show();
+		// 		});
+		// 		break;	
+		// 	default:
+		// 		modal = $("#" + sendform).closest('.modal');
+		// 		modal.fadeOut('normal',function(){
+		// 			modal.modal('hide');
+		// 		});
+		// 		break;
+		// }
+	}
+}
+function stopClock(){
+	window.clearInterval(timer);
+	timer = null;
+	sec = 3;
+}
+
+function startClock(sendform){
+	if (!timer)
+		timer = window.setInterval("showTime('" + sendform + "')",1000);
+}
+
 
 $(function(){
 	$('.policy input').click(function(){
