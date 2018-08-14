@@ -1,13 +1,21 @@
 .card{
 	border: 1px solid $color11;
-	width: 20rem;
+	margin-top: 2.6rem;
+	margin-right: 3.1rem;
 	padding-top: 2.7rem;
+	// width: calc(20% - 3.8rem);
+	width: 20rem;
+	&:nth-child(5n){
+		margin-right: 0;
+	}
 	&-img{
 		display: block;
 		width: auto;
 		margin: auto;
 	}
 	&-body{
+		padding-left: .7rem;
+		padding-right: .7rem;
 		text-align: center;
 	}
 
@@ -68,7 +76,7 @@
 	}
 
 	&-label{
-		left: 1px;
+		left: 0;
 		position: absolute;
 		top: 7px;
 	}

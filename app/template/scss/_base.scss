@@ -69,6 +69,32 @@ input::-moz-focus-inner{
 	justify-content: center;
 }
 
+.btn{
+	background: $color4;
+	border-radius: 3px;
+	border: none;
+	color: $color2;
+	display: block;
+	font-family: "SegoeUIBold";
+	font-size: 1.5rem;
+	height: 3.6rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: uppercase;
+	width: 22rem;
+	cursor: pointer;
+	transition: .3s;
+	&:hover:not(:disabled){
+		background-color: darken($color4, 10%)
+	}
+	&:disabled{
+		cursor: default;
+		filter: grayscale(1);
+		opacity: .6;
+	}
+}
+
+
 /*** standart classes *****/
 p{margin-bottom: .6rem;}
 a{color:#020000}
@@ -99,6 +125,16 @@ em strong
 	font-family: "SegoeUIBoldItalic";
 }
 
+.dashed{
+	color: $color4;
+	transition: .3s border-bottom;
+	border-bottom: 1px dashed rgba(255,255,255,0);
+	text-decoration: none;
+	&:hover{
+		border-bottom: 1px dashed $color4;
+		text-decoration: none;
+	}
+}
 
 .tdn{
 	text-decoration: none;
@@ -570,4 +606,9 @@ em strong
 		left: 0;
 
 	}
+}
+
+
+.policy{
+	margin-top: 2rem;
 }

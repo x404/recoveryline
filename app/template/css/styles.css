@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -1699,6 +1700,28 @@ input::-moz-focus-inner {
   align-items: center;
   justify-content: center; }
 
+.btn {
+  background: #064ca1;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  display: block;
+  font-family: "SegoeUIBold";
+  font-size: 1.5rem;
+  height: 3.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  width: 22rem;
+  cursor: pointer;
+  transition: .3s; }
+  .btn:hover:not(:disabled) {
+    background-color: #043570; }
+  .btn:disabled {
+    cursor: default;
+    filter: grayscale(1);
+    opacity: .6; }
+
 /*** standart classes *****/
 p {
   margin-bottom: .6rem; }
@@ -1735,6 +1758,15 @@ strong em,
 em strong {
   font-weight: normal;
   font-family: "SegoeUIBoldItalic"; }
+
+.dashed {
+  color: #064ca1;
+  transition: .3s border-bottom;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0);
+  text-decoration: none; }
+  .dashed:hover {
+    border-bottom: 1px dashed #064ca1;
+    text-decoration: none; }
 
 .tdn {
   text-decoration: none; }
@@ -2075,6 +2107,219 @@ em strong {
     width: 90%;
     top: 0;
     left: 0; }
+
+.policy {
+  margin-top: 2rem; }
+
+.user-access + label {
+  cursor: pointer;
+  font-size: 14px; }
+
+.user-access:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.user-access:not(checked) + label {
+  color: #808080;
+  display: block;
+  position: relative;
+  /* будем позиционировать псевдочекбокс относительно label */
+  padding: 3px 0 0 43px;
+  /* оставляем слева от label место под псевдочекбокс */ }
+
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.user-access:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #064ca1;
+  text-align: center; }
+
+/* Меняем фон чекбокса, когда он включен. */
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.user-access:checked + label:after {
+  content: '*';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  line-height: 1;
+  width: 30px;
+  height: 17px;
+  font-size: 36px;
+  color: #808080;
+  text-align: center; }
+
+.modal {
+  position: fixed;
+  top: 16%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  overflow: hidden;
+  outline: 0; }
+  .modal.fade .modal-dialog {
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    transform: translate(0, -25%); }
+  .modal.show .modal-dialog {
+    transform: translate(0, 0); }
+  .modal__body {
+    position: relative; }
+
+.slick-initialized {
+  display: block !important; }
+
+.modal-open .footer,
+.modal-open .outerwrapper {
+  filter: blur(3px); }
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: translateZ(0); }
+
+.close-modal {
+  background-color: #2f4f8e;
+  border: none;
+  cursor: pointer;
+  height: 22px;
+  position: absolute;
+  left: 50%;
+  margin-left: -11px;
+  top: 0;
+  width: 22px; }
+  .close-modal svg {
+    transition: .3s transform;
+    color: #fff;
+    margin-top: -3px; }
+  .close-modal line {
+    stroke: #fff;
+    stroke-width: 2; }
+  .close-modal:hover svg {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+.modal__text {
+  line-height: 1.7; }
+  .modal__text * {
+    font-family: "SegoeUIItalic", Arial; }
+  .modal__text strong u {
+    font-family: "SegoeUIBoldItalic";
+    font-weight: normal; }
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.modal-dialog {
+  background: #f7f7f7;
+  position: relative;
+  margin: 7% auto;
+  padding: 4.8rem 25px 15px; }
+  .modal-dialog .close {
+    background: none;
+    border: none;
+    right: 47px;
+    top: 55px;
+    position: absolute;
+    z-index: 99; }
+  .modal-dialog .thank {
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff; }
+  .modal-dialog .title {
+    text-transform: uppercase;
+    color: #808080;
+    font-size: 22px;
+    padding-top: 15px; }
+
+.modal.fade .modal-dialog {
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  transform: translate(0, -25%); }
+
+.modal.show .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0); }
+
+.modal-dialog .btn {
+  margin-top: 2.8rem; }
+
+.modal-dialog-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: calc(100% - (0.5rem * 2)); }
+
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-clip: padding-box;
+  outline: 0;
+  box-shadow: 0 0 30px rgba(0, 255, 60, 0.26);
+  background-color: #fff;
+  padding: 5.5rem 5rem; }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040; }
+
+.modal-backdrop.fade {
+  opacity: 0; }
+
+.modal-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5; }
+
+.modal-content .close {
+  height: 28px; }
+  .modal-content .close line {
+    stroke: #fff;
+    stroke-width: 2; }
+
+#callback .form-control {
+  background: #fff;
+  border: 1px solid #064ca1;
+  color: #808080;
+  display: block;
+  font-size: 3.6rem;
+  height: 6.2rem;
+  padding: 0;
+  text-align: center;
+  width: 100%; }
+
+.form-control:disabled {
+  opacity: .8; }
 
 /* =services
 ---------------------------*/
@@ -2553,13 +2798,19 @@ em strong {
 
 .card {
   border: 1px solid #e6e6e6;
-  width: 20rem;
-  padding-top: 2.7rem; }
+  margin-top: 2.6rem;
+  margin-right: 3.1rem;
+  padding-top: 2.7rem;
+  width: 20rem; }
+  .card:nth-child(5n) {
+    margin-right: 0; }
   .card-img {
     display: block;
     width: auto;
     margin: auto; }
   .card-body {
+    padding-left: .7rem;
+    padding-right: .7rem;
     text-align: center; }
   .card-title {
     color: #064ca1;
@@ -2605,7 +2856,7 @@ em strong {
       margin-left: -14px;
       top: 4px; }
   .card-label {
-    left: 1px;
+    left: 0;
     position: absolute;
     top: 7px; }
   .card .label {
