@@ -2019,6 +2019,9 @@ em strong {
 .qcart__content {
   padding-left: 3rem; }
 
+.qcart .rur {
+  font-style: italic; }
+
 .menu2 {
   font-size: 1.7rem; }
 
@@ -2171,7 +2174,6 @@ em strong {
   position: relative;
   color: #fff; }
   .footer .container {
-    padding: 1.8rem 0;
     position: relative; }
   .footer a {
     color: currentColor;
@@ -2181,15 +2183,15 @@ em strong {
       text-decoration: none;
       border-bottom-color: rgba(0, 0, 0, 0); }
 
+.copyright {
+  padding: 1.8rem 0; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0); }
-
-.kreotif {
-  margin-right: 140px; }
 
 .kreotif-logo {
   background: #fff;
@@ -2198,7 +2200,7 @@ em strong {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
+  right: 32px;
   display: flex;
   align-items: center;
   justify-content: center;

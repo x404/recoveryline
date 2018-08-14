@@ -299,6 +299,9 @@ em strong
 	&__content{
 		padding-left: 3rem;
 	}
+	.rur{
+		font-style: italic;
+	}
 }
 
 .menu2{
@@ -510,7 +513,6 @@ em strong
 	position: relative;
 	color: $color2;
 	.container{
-		padding: 1.8rem 0;
 		position: relative;
 	}
 	a{
@@ -524,6 +526,10 @@ em strong
 	}
 }
 
+.copyright{
+	padding: 1.8rem 0;
+}
+
 .visually-hidden{
 	position: absolute;
 	width: 1px;
@@ -533,7 +539,7 @@ em strong
 }
 
 .kreotif{
-	margin-right: 140px;
+	// margin-right: 140px;
 }
 
 .kreotif-logo{
@@ -543,11 +549,12 @@ em strong
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	right: 0;
+	right: 32px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+
 	img{
 		vertical-align: top;
 	}
