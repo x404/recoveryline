@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$('#home-carousel').slick({
+		lazyLoad: 'progressive',
 		dots: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,

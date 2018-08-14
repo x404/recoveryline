@@ -1879,7 +1879,7 @@ h2 {
 h3 {
   font-size: 1.6rem; }
 
-.regular {
+.regular, .slide__text {
   font-family: "SegoeUIRegular"; }
 
 strong,
@@ -2424,6 +2424,31 @@ label.error {
 .slide img {
   height: auto;
   width: 100%; }
+
+.slide__text {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+.slide .text1,
+.slide .text2 {
+  background-color: rgba(6, 76, 161, 0.8);
+  position: absolute; }
+
+.slide .text1 {
+  font-size: 3rem;
+  top: 30%;
+  padding: 0 110px;
+  text-align: center; }
+
+.slide .text2 {
+  padding: .8rem 1rem;
+  top: 60%;
+  width: 78%;
+  right: 10px; }
 
 #home-carousel .slick-dots {
   bottom: 10px; }

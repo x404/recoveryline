@@ -35,9 +35,41 @@
 }
 
 .slide{
+	.container{
+		// position: relative;
+	}
 	img{
 		height: auto;
 		width: 100%;
+	}
+	&__text{
+		color: $color2;
+		@extend .regular;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.text1,
+	.text2{
+		background-color: rgba(6, 76, 161, .8);
+		position: absolute;
+	}
+
+	
+	.text1{
+		font-size: 3rem;
+		top: 30%;
+		padding: 0 110px; 
+		text-align: center;
+	}
+
+	.text2{
+		padding: .8rem 1rem;
+		top: 60%;
+		width: 78%;
+		right: 10px;
 	}
 }
 
