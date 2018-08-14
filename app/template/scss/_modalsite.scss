@@ -86,8 +86,27 @@
 
 
 .modal-dialog{
+	width: 100%;
+	max-width: 100%;
 	.btn{
 		margin-top: 2.8rem;
+	}
+
+	.text{
+		background-color: $color2;
+	}
+
+	.modal-title{
+		@extend .bold;
+		color: $color4;
+		font-size: 1.8rem;
+	}
+
+	.text{
+		border: 1px solid #e6e6e6;
+		color: $color7;
+		margin: 4rem 0;
+		padding: 1.5rem;
 	}
 }
 
@@ -114,8 +133,6 @@
 	padding-right: 0 !important;
 	// padding-top: 7%;
 	.modal-dialog{
-		width: 100%;
-		max-width: 100%;
 	}
 	.form-control{
 		background: #fff;

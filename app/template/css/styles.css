@@ -1884,6 +1884,7 @@ h3 {
 
 strong,
 .bold,
+.modal-dialog .modal-title,
 .card-price {
   font-weight: normal;
   font-family: "SegoeUIBold"; }
@@ -2362,8 +2363,21 @@ label.error {
   font-size: 22px;
   padding-top: 15px; }
 
-.modal-dialog .btn {
-  margin-top: 2.8rem; }
+.modal-dialog {
+  width: 100%;
+  max-width: 100%; }
+  .modal-dialog .btn {
+    margin-top: 2.8rem; }
+  .modal-dialog .text {
+    background-color: #fff; }
+  .modal-dialog .modal-title {
+    color: #064ca1;
+    font-size: 1.8rem; }
+  .modal-dialog .text {
+    border: 1px solid #e6e6e6;
+    color: #808080;
+    margin: 4rem 0;
+    padding: 1.5rem; }
 
 .modal-content {
   padding: 4.8rem 0 15px;
@@ -2377,9 +2391,6 @@ label.error {
 
 #callback {
   padding-right: 0 !important; }
-  #callback .modal-dialog {
-    width: 100%;
-    max-width: 100%; }
   #callback .form-control {
     background: #fff;
     border: 1px solid #064ca1;
