@@ -8,8 +8,11 @@
 @import "bootstrap/mixins/text-truncate";
 @import "bootstrap/mixins/text-emphasis";
 @import "bootstrap/mixins/text-hide";
+@import "bootstrap/mixins/border-radius";
+@import "bootstrap/mixins/transition";
 @import "bootstrap/grid";
-@import "border-radius";
+@import "bootstrap/transitions";	
+@import "bootstrap/modal";
 @import "card";
 @import "bootstrap/utilities";
 // @import "bootstrap/utilities/display";
@@ -25,7 +28,7 @@
 @import 'sprite';
 @import 'base';
 @import 'user-access';
-@import 'modal';
+@import 'modalsite';
 @import 'homepage';
 @import 'mobmenu';
 

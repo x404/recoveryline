@@ -606,30 +606,32 @@
 
 <!-- =modal callback -->
 <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal__body">
-			<div class="container">
-			    <form action="/" method="post" class="form-policy" id="callback-form">
-					<fieldset>
-						<label for="cbtel" class="visually-hidden">телефон</label>
-						<input type="tel" id="cbtel" name="tel" class="tel form-control required" value="" placeholder="телефон" tabindex="12" /><span class="error"></span>
-						
-						<input type="hidden" name="workemail" value="">
-						<input type="submit" name="callback_submit" class="submit btn" tabindex="13" value="ПЕРЕЗВОНИТЬ" />
-						<div class="policy">
-							<input type="checkbox" id="cbcheckbox" value="" name="checkbox" checked="checked" class="user-access" tabindex="14">
-							<label for="cbcheckbox">Я Согласен на обработку персональных данных и принимаю условия <a href="#" title="" target="_blank" class="dashed">Пользовательского соглашения</a></label>
-						</div>
-					</fieldset>
-				</form>
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal__body">
+				<div class="container">
+				    <form action="/" method="post" class="form-policy" id="callback-form">
+						<fieldset>
+							<label for="cbtel" class="visually-hidden">телефон</label>
+							<input type="tel" id="cbtel" name="tel" class="tel form-control required" value="" placeholder="телефон" tabindex="12" /><span class="error"></span>
+							
+							<input type="hidden" name="workemail" value="">
+							<input type="submit" name="callback_submit" class="submit btn" tabindex="13" value="ПЕРЕЗВОНИТЬ" />
+							<div class="policy">
+								<input type="checkbox" id="cbcheckbox" value="" name="checkbox" checked="checked" class="user-access" tabindex="14">
+								<label for="cbcheckbox">Я Согласен на обработку персональных данных и принимаю условия <a href="#" title="" target="_blank" class="dashed">Пользовательского соглашения</a></label>
+							</div>
+						</fieldset>
+					</form>
+				</div>
 			</div>
+			<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
+				<svg width="10" height="10">
+					<line x1="0" y1="0" x2="10" y2="10"></line>
+					<line x1="10" y1="0" x2="0" y2="10"></line>
+				</svg>
+			</button>
 		</div>
-		<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
-			<svg width="10" height="10">
-				<line x1="0" y1="0" x2="10" y2="10"></line>
-				<line x1="10" y1="0" x2="0" y2="10"></line>
-			</svg>
-		</button>
 	</div>
 </div>
 <!-- =/modal callback -->
@@ -639,6 +641,7 @@
 <script src="/template/js/slick.min.js"></script>
 <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
 <script src="//yastatic.net/share2/share.js"></script>
+<script src="/template/js/modal.js"></script>
 <script src="/template/js/engine.js"></script>
 </body>
 </html>
