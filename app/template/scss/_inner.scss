@@ -8,8 +8,11 @@
 			color: $color4;
 			margin-right: .3rem;
 			a{
-				color: currentColor;
+				color: $color7;
 				@extend .dashed;
+				&:hover{
+					color: currentColor;					
+				}
 			}
 		}
 	}

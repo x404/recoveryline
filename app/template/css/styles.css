@@ -2564,7 +2564,9 @@ label.error {
       color: #064ca1;
       margin-right: .3rem; }
       .breadcrumbs ul li a {
-        color: currentColor; }
+        color: #808080; }
+        .breadcrumbs ul li a:hover {
+          color: currentColor; }
 
 main h1 {
   color: #064ca1;
