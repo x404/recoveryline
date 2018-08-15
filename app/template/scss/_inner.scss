@@ -1,0 +1,35 @@
+.breadcrumbs{
+	margin: 2rem 0 1.5rem;
+	ul{
+		display: flex;
+		text-transform: lowercase;
+		padding-left: 0;
+		li{
+			color: $color4;
+			margin-right: .3rem;
+			a{
+				color: currentColor;
+				@extend .dashed;
+			}
+		}
+	}
+}
+
+
+main{
+	h1{
+		color: $color4;
+		font-size: 1.8rem;
+		margin-top: 2.5rem;
+		margin-bottom: 2rem;
+		text-transform: uppercase;
+	}
+
+	h2{
+		@extend .regular;
+		font-size: 1.6rem;
+		font-weight: normal;
+		margin-bottom: 1.2rem;
+	}
+
+}
