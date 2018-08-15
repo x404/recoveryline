@@ -1899,12 +1899,12 @@ em strong {
   font-weight: normal;
   font-family: "SegoeUIBoldItalic"; }
 
-.dashed {
+.dashed, .menu2__wrapper a {
   color: #064ca1;
   transition: .3s border-bottom;
   border-bottom: 1px dashed rgba(255, 255, 255, 0);
   text-decoration: none; }
-  .dashed:hover {
+  .dashed:hover, .menu2__wrapper a:hover {
     border-bottom: 1px dashed #064ca1;
     text-decoration: none; }
 
@@ -1995,11 +1995,14 @@ em strong {
 .neck {
   background: #064ca1;
   color: #fff;
-  min-height: 48px; }
+  min-height: 48px;
+  position: relative; }
   .neck a {
     color: currentColor; }
   .neck p {
     margin: 0; }
+  .neck__menu {
+    position: static; }
 
 .qcart a {
   margin-left: 54px;
@@ -2025,6 +2028,23 @@ em strong {
 
 .menu2 {
   font-size: 1.7rem; }
+  .menu2 > a:hover {
+    text-decoration: none; }
+  .menu2__wrapper {
+    background-color: #e6e6e6;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    z-index: 10; }
+    .menu2__wrapper ul {
+      margin-bottom: 0; }
+    .menu2__wrapper a {
+      color: #064ca1;
+      font-size: 1.4rem; }
+    .menu2__wrapper li {
+      padding: 1.5rem 0; }
 
 .menucatalog {
   position: relative;
@@ -2085,6 +2105,14 @@ em strong {
 .main {
   overflow: hidden; }
 
+.link-bordered, .bottom li a, main a {
+  transition: .3s;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+  .link-bordered:hover, .bottom li a:hover, main a:hover {
+    border-bottom: 1px dashed #064ca1;
+    color: #064ca1;
+    text-decoration: none; }
+
 .bottom {
   color: #000;
   background: #f0f0f0;
@@ -2100,13 +2128,8 @@ em strong {
     margin: .3rem 0;
     white-space: nowrap; }
     .bottom li a {
-      border-bottom: 1px dashed rgba(0, 0, 0, 0);
       color: #000;
       transition: .3s; }
-      .bottom li a:hover {
-        border-bottom: 1px dashed #064ca1;
-        color: #064ca1;
-        text-decoration: none; }
   .bottom ul {
     padding-left: 0; }
   .bottom .address {
@@ -2128,6 +2151,9 @@ em strong {
       border-bottom: 1px dashed #064ca1; }
   .bottom .callback:hover {
     border-bottom: 1px dashed #ed1b24; }
+
+main a {
+  color: #064ca1; }
 
 .social a {
   display: inline-block;
