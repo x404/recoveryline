@@ -214,8 +214,7 @@ em strong
 /* =header
 ---------------------------*/
 .header{
-	padding: 2rem 0 1rem;
-
+	padding: 2rem 0 .6rem;
 	.mainnav{
 		margin: 0;
 		padding: 0;
@@ -241,6 +240,7 @@ em strong
 	}
 
 	&__contacts{
+		padding-top: .8rem;
 		.tel{
 			font-size: 24px;
 			color: $color4;
@@ -264,10 +264,9 @@ em strong
 	border: none;
 	color: $color5;
 	cursor: pointer;
-	padding: 0;
-	margin-top: 5px;
 	display: inline-block;
 	height: 25px;
+	padding: 0;
 	transition: .3s;
 	&:hover{
 		border-bottom: 1px dashed;
@@ -314,6 +313,7 @@ em strong
 	}
 	&__content{
 		padding-left: 3rem;
+		padding-right: 3rem;
 	}
 	.rur{
 		font-style: italic;

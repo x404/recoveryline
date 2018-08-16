@@ -1959,7 +1959,7 @@ em strong {
 /* =header
 ---------------------------*/
 .header {
-  padding: 2rem 0 1rem; }
+  padding: 2rem 0 .6rem; }
   .header .mainnav {
     margin: 0;
     padding: 0; }
@@ -1976,13 +1976,15 @@ em strong {
         border-bottom: 1px dashed #064ca1;
         color: #064ca1;
         text-decoration: none; }
-  .header__contacts .tel {
-    font-size: 24px;
-    color: #064ca1; }
-    .header__contacts .tel span {
-      color: #000; }
-    .header__contacts .tel:hover {
-      text-decoration: none; }
+  .header__contacts {
+    padding-top: .8rem; }
+    .header__contacts .tel {
+      font-size: 24px;
+      color: #064ca1; }
+      .header__contacts .tel span {
+        color: #000; }
+      .header__contacts .tel:hover {
+        text-decoration: none; }
   .header p {
     line-height: 1.4;
     margin-bottom: 0; }
@@ -1993,10 +1995,9 @@ em strong {
   border: none;
   color: #ed1b24;
   cursor: pointer;
-  padding: 0;
-  margin-top: 5px;
   display: inline-block;
   height: 25px;
+  padding: 0;
   transition: .3s; }
   .callback:hover {
     border-bottom: 1px dashed; }
@@ -2032,7 +2033,8 @@ em strong {
     top: 0px; }
 
 .qcart__content {
-  padding-left: 3rem; }
+  padding-left: 3rem;
+  padding-right: 3rem; }
 
 .qcart .rur {
   font-style: italic; }
