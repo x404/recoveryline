@@ -1,0 +1,48 @@
+.page-error{
+	background: url(../images/capsule.jpg) no-repeat 10px 90px;
+	min-height: 490px;
+	padding-top: 6.5rem;
+	.box{
+		margin-right: 6rem;
+		width: 22rem;
+		float: right;
+		div{
+			a{
+				color: $color4;
+				border-bottom: 1px dashed;
+				&:hover{
+					text-decoration: none;
+					border-bottom: 1px dashed rgba(0,0,0,0)
+				}
+			}
+		}
+	}
+
+	ul{
+		padding-left: 0;
+		margin: 2rem 0 4rem;
+		text-transform: uppercase;
+		li{
+			margin-bottom: 1.5rem;
+			a{
+				background: $color16;
+				border-radius: 5px;
+				color: $color7;
+				display: block;
+				padding: .6rem 0;
+				text-align: center;
+				transition: .3s;
+				width: 21.5rem;
+				&:hover{
+					color: $color2;
+					text-decoration: none;
+					background-color: $color4;
+				}
+			}
+		}
+	}
+}
+
+.error-title{
+	padding-right: 17rem;
+}
