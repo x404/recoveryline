@@ -26,7 +26,8 @@ html {
 
 
 body{
-	background: url(../images/bg.jpg) #fefefe;
+	background-color: #fefefe;
+	background-image: url(../images/bg.jpg);
 	@include font-size(1.4);
 	font-display: swap;
 	display: grid;
@@ -220,6 +221,13 @@ em strong
 		padding: 0;
 		li{
 			margin: 5px 0;
+			&.active{
+				a, span{
+					border-bottom: 1px dashed $color4;
+					color: $color4;
+					cursor: default;
+				}
+			}
 		}
 		a{
 			color: $color1;

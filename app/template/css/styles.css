@@ -1813,7 +1813,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: url(../images/bg.jpg) #fefefe;
+  background-color: #fefefe;
+  background-image: url(../images/bg.jpg);
   font-size: 14px;
   font-size: 1.4rem;
   font-display: swap;
@@ -1964,6 +1965,10 @@ em strong {
     padding: 0; }
     .header .mainnav li {
       margin: 5px 0; }
+      .header .mainnav li.active a, .header .mainnav li.active span {
+        border-bottom: 1px dashed #064ca1;
+        color: #064ca1;
+        cursor: default; }
     .header .mainnav a {
       color: #000;
       border-bottom: 1px dashed rgba(0, 0, 0, 0); }
@@ -2763,6 +2768,43 @@ main h2 {
     position: absolute;
     right: 0;
     top: 0; }
+
+.page-error {
+  background: url(../images/capsule.jpg) no-repeat 10px 90px;
+  min-height: 490px;
+  padding-top: 6.5rem; }
+  .page-error .box {
+    margin-right: 6rem;
+    width: 22rem;
+    float: right; }
+    .page-error .box div a {
+      color: #064ca1;
+      border-bottom: 1px dashed; }
+      .page-error .box div a:hover {
+        text-decoration: none;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+  .page-error ul {
+    padding-left: 0;
+    margin: 2rem 0 4rem;
+    text-transform: uppercase; }
+    .page-error ul li {
+      margin-bottom: 1.5rem; }
+      .page-error ul li a {
+        background: #ececec;
+        border-radius: 5px;
+        color: #808080;
+        display: block;
+        padding: .6rem 0;
+        text-align: center;
+        transition: .3s;
+        width: 21.5rem; }
+        .page-error ul li a:hover {
+          color: #fff;
+          text-decoration: none;
+          background-color: #064ca1; }
+
+.error-title {
+  padding-right: 17rem; }
 
 /* =mobile-menu
 ---------------------------*/
