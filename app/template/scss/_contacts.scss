@@ -1,0 +1,121 @@
+.feedback__form
+{
+	.thank{
+		align-items: center;
+		background-color: $color2;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+
+.feedback__form{
+	.thank{
+		background: none;
+		border: none;
+		height: 110px;
+		position: static;
+		margin-bottom: 1rem;
+	}
+}
+
+
+.feedback{
+	margin-left: auto;
+	margin-right: auto;
+	width: 785px;
+	font-size: 1.4rem;
+	margin-top: -150px;
+	position: relative;
+	z-index: 999;
+
+	&__title{
+		@extend .bold;
+		color: #4c4646;
+		font-size: 1.3rem;
+	}
+	.vcard{
+		padding-top: 0;
+		.name{
+			display: none;
+		}
+		.adr{
+			margin-bottom: .5rem;
+		}
+		.tel{
+			text-decoration: none;
+			margin-right: .5rem;
+		}
+		.email{
+			margin-left: .5rem;
+			@extend .dashed;
+		}
+	}
+
+	&__content{
+		background-color: rgba(255, 255, 255, .8);
+		padding: 3.8rem 0 3rem;
+	}
+	&__form{
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-top: 3rem;
+		position: relative;
+		.row{
+			@include flexbox;
+			@include justify-content(space-between);
+			margin-bottom: 1rem;
+
+			input.form-control,
+			textarea{
+				background-color: $color11;
+				border: 1px solid $color11;
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+				font-size: 1.4rem;
+			}
+
+
+			input.form-control{
+				@extend .italic;
+				height: 3rem;
+				// width: 245px;
+				width: 100%;
+				@include font-size(1.4);
+				@include placeholder($color1);
+			}
+
+			textarea{
+				@extend .italic;
+				overflow: hidden;
+				height: 6rem;
+				@include placeholder($color1);
+				width: 100%;
+			}
+
+			.error{
+				border: 1px solid red !important
+			}
+
+			.submit{
+				@include transition-param();
+				@extend .italic;
+				border: none;
+				color: $color2;
+				cursor: pointer;
+				margin-left: 1.8rem;
+				text-decoration: none;
+				text-transform: lowercase;
+				width: 12rem;
+				background-color: $color10;
+				&:hover{
+					opacity: .9
+				}
+			}
+		}
+	}
+}
