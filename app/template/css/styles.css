@@ -1834,7 +1834,8 @@ input::-moz-focus-inner {
   -webkit-flex: 1;
   flex: 1; }
 
-.flex-center, .box-w, .producer__link, .media__title, .pagination a, .pagination span, .company__link, .card-link {
+.flex-center, .box-w, .producer__link, .media__title, .pagination a, .pagination span, .company__link, .feedback .sending,
+.feedback .thank, .card-link {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -2656,13 +2657,6 @@ main h2 {
   top: 0;
   width: 100%; }
 
-.feedback__form .thank {
-  background: none;
-  border: none;
-  height: 110px;
-  position: static;
-  margin-bottom: 1rem; }
-
 .feedback {
   margin-left: auto;
   margin-right: auto;
@@ -2689,9 +2683,8 @@ main h2 {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 3.8rem 0 3rem; }
   .feedback__form {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 3rem;
+    margin-top: 1rem;
+    padding: 2rem 1rem  0 1rem;
     position: relative; }
     .feedback__form .row {
       display: -webkit-box;
@@ -2730,8 +2723,8 @@ main h2 {
         .feedback__form .row input.form-control:focus:-ms-input-placeholder {
           transition: line-height 0.5s ease; }
       .feedback__form .row textarea {
-        overflow: hidden;
         height: 6rem;
+        overflow: hidden;
         width: 100%; }
         .feedback__form .row textarea::-webkit-input-placeholder {
           color: #000; }
@@ -2760,6 +2753,16 @@ main h2 {
         background-color: #f0f0f0; }
         .feedback__form .row .submit:hover {
           opacity: .9; }
+  .feedback .sending,
+  .feedback .thank {
+    background: #fefefe;
+    bottom: -1px;
+    height: auto;
+    left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
 
 /* =mobile-menu
 ---------------------------*/

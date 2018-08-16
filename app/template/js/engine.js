@@ -91,6 +91,21 @@ $(document).ready(function(){
 		}
 	});
 
+
+	$('#feedback-form').validate({
+		submitHandler: function(form){
+			var strSubmit=$(form).serialize();
+			$(form).append('<div class="sending">Идет отправка ...</div>');
+			$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
+				success: function(){
+					document.querySelector('.sending').remove();
+					$('#feedback-form').append(thankcallback);
+					startClock('feedback-form');
+				}
+			}).fail(function(error){alert(errorTxt)});
+		}
+	}); 
+
 });
 	
 
@@ -103,38 +118,36 @@ function showTime(sendform){
 	if (sec <=0) {
 		stopClock();
 
+		switch (sendform){
+			// case 'qorder-form':
+			// 	$('.qorder__box .thank').fadeOut('normal',function(){
+			// 		$('.qorder__box .thank').remove();
+			// 		$('.qorder__box .form-control, .qorder__box textarea').val('');
+			// 	});
+			// 	break;
+			case 'feedback-form':
+				$('.feedback .thank').fadeOut('normal',function(){
+					$('.feedback .thank').remove();
+					$('.feedback .form-control, .feedback textarea').val('');
+					$('.feedback__form fieldset').show();
+				});
+				break;
+			// case 'cart-form':
+			// 	$('.cart .thank').fadeOut('normal',function(){
+			// 		$('.cart .thank').remove();
+			// 		// $('.cart .form-control, .cart textarea').val('');
+			// 		// $('.cart__form fieldset').show();
+			// 	});
+			// 	break;	
+			default:
 				modal = $("#" + sendform).closest('.modal');
 				modal.modal('hide');
 				modal.find('.thank').remove();
 				modal.find('.form-control, textarea').val('');
-				
-		// switch (sendform){
-		// 	case 'callback-form':
-		// 		modal = $("#" + sendform).closest('.modal');
-		// 		modal.modal('hide');
-		// 		modal.find('.thank').remove();
-		// 		modal.find('.form-control, textarea').val('');
-		// 		break;
-		// 	case 'addfaq-form':
-		// 		modal = $("#" + sendform).closest('.modal');
-		// 		modal.modal('hide');
-		// 		modal.find('.thank').remove();
-		// 		modal.find('.form-control, textarea').val('');
-		// 		break;
-		// 	case 'cart-form':
-		// 		$('.cart .thank').fadeOut('normal',function(){
-		// 			$('.cart .thank').remove();
-		// 			// $('.cart .form-control, .cart textarea').val('');
-		// 			// $('.cart__form fieldset').show();
-		// 		});
-		// 		break;	
-		// 	default:
-		// 		modal = $("#" + sendform).closest('.modal');
-		// 		modal.fadeOut('normal',function(){
-		// 			modal.modal('hide');
-		// 		});
-		// 		break;
-		// }
+				break;
+		}
+
+
 	}
 }
 function stopClock(){

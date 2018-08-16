@@ -13,16 +13,6 @@
 	}
 }
 
-.feedback__form{
-	.thank{
-		background: none;
-		border: none;
-		height: 110px;
-		position: static;
-		margin-bottom: 1rem;
-	}
-}
-
 
 .feedback{
 	margin-left: auto;
@@ -61,9 +51,8 @@
 		padding: 3.8rem 0 3rem;
 	}
 	&__form{
-		padding-left: 1rem;
-		padding-right: 1rem;
-		padding-top: 3rem;
+		margin-top: 1rem;
+		padding: 2rem 1rem  0 1rem;
 		position: relative;
 		.row{
 			@include flexbox;
@@ -91,9 +80,9 @@
 
 			textarea{
 				@extend .italic;
-				overflow: hidden;
-				height: 6rem;
 				@include placeholder($color1);
+				height: 6rem;
+				overflow: hidden;
 				width: 100%;
 			}
 
@@ -117,5 +106,18 @@
 				}
 			}
 		}
+	}
+
+	.sending,
+	.thank{
+		@extend .flex-center;
+		background: #fefefe;
+		bottom: -1px;
+		height: auto;
+		left: 0;
+		margin-bottom: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 }
