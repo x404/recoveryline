@@ -34,5 +34,53 @@ main{
 		font-weight: normal;
 		margin-bottom: 1.2rem;
 	}
+}
 
+
+.articles{
+	&__list{
+		margin-top: 2.5rem;
+		& > div{
+			margin-bottom: 3rem;
+			flex-basis: 25%;
+		}
+		.media__inner{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+
+.pagination{
+	&.topline{
+		margin-top: 1rem;
+		padding-top: 3.2rem;
+	}
+	ul{
+		display: flex;
+		justify-content: center;
+		li{
+			margin: 0 .5rem;			
+		}
+	}
+	font-size: 1.8rem;
+	font-family: "SegoeUIBoldItalic";
+	a, span{
+		@extend .flex-center;
+		background-color: $color15;
+		border-radius: 2px;
+		color: $color2;
+		height: 30px;
+		text-align: center;
+		width: 30px;
+		transition: .3s background-color;
+	}
+	a:hover{
+		background-color: $color4;
+		text-decoration: none;
+	}
+	.current{
+		background-color: $color4;
+	}
 }

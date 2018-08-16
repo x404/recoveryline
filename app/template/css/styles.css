@@ -1834,7 +1834,7 @@ input::-moz-focus-inner {
   -webkit-flex: 1;
   flex: 1; }
 
-.flex-center, .box-w, .producer__link, .media__title, .card-link {
+.flex-center, .box-w, .producer__link, .media__title, .pagination a, .pagination span, .card-link {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -2579,6 +2579,40 @@ main h2 {
   font-size: 1.6rem;
   font-weight: normal;
   margin-bottom: 1.2rem; }
+
+.articles__list {
+  margin-top: 2.5rem; }
+  .articles__list > div {
+    margin-bottom: 3rem;
+    flex-basis: 25%; }
+  .articles__list .media__inner {
+    margin-left: auto;
+    margin-right: auto; }
+
+.pagination {
+  font-size: 1.8rem;
+  font-family: "SegoeUIBoldItalic"; }
+  .pagination.topline {
+    margin-top: 1rem;
+    padding-top: 3.2rem; }
+  .pagination ul {
+    display: flex;
+    justify-content: center; }
+    .pagination ul li {
+      margin: 0 .5rem; }
+  .pagination a, .pagination span {
+    background-color: #b3b3b3;
+    border-radius: 2px;
+    color: #fff;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+    transition: .3s background-color; }
+  .pagination a:hover {
+    background-color: #064ca1;
+    text-decoration: none; }
+  .pagination .current {
+    background-color: #064ca1; }
 
 /* =mobile-menu
 ---------------------------*/
