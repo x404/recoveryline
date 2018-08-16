@@ -51,7 +51,8 @@ main{
 	}
 }
 
-
+/* =pagination
+---------------------------*/
 .pagination{
 	&.topline{
 		margin-top: 1rem;
@@ -84,3 +85,36 @@ main{
 		background-color: $color4;
 	}
 }
+/* =/pagination
+---------------------------*/
+
+
+
+
+/* =delivery
+---------------------------*/
+.companies{
+	&__list{
+		margin: 3.5rem 0 5rem;
+		padding-top: 3rem;
+		.title{
+			font-size: 1.8rem;
+			color: $color1;
+		}
+	}
+}
+
+
+.company{
+	&__link{
+		@extend .flex-center;
+		border: 1px solid $color11;
+		height: 8.5rem;
+		width: 20rem;
+		&:hover{
+			border: 1px solid $color4;
+		}
+	}
+}
+/* =/delivery
+---------------------------*/

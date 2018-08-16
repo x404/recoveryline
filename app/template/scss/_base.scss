@@ -459,7 +459,7 @@ em strong
 	}
 
 	.address{
-		padding-right: 5rem;
+		padding-right: 2.4rem;
 		address{
 			margin-top: 1rem;
 			margin-bottom: 0;
@@ -519,7 +519,7 @@ main{
 	border-radius: 3px;
 	border: 1px solid #ddd;
 	height: 35px;
-	margin-bottom: .8rem;
+	margin: .3rem 0 .6rem;
 	width: 61px;
 	@extend .flex-center;
 	img{
@@ -531,12 +531,12 @@ main{
 #totop{
 	background: $color10;
 	border: none;
+	cursor: pointer;
 	height: 48px;
 	position: absolute;
-	right: 0;
+	right: 35px;
 	top: -68px;
 	width: 70px;
-	cursor: pointer;
 	svg{
 		position: absolute;
 		top: 15px;

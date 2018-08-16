@@ -1834,7 +1834,7 @@ input::-moz-focus-inner {
   -webkit-flex: 1;
   flex: 1; }
 
-.flex-center, .box-w, .producer__link, .media__title, .pagination a, .pagination span, .card-link {
+.flex-center, .box-w, .producer__link, .media__title, .pagination a, .pagination span, .company__link, .card-link {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -2134,7 +2134,7 @@ em strong {
   .bottom ul {
     padding-left: 0; }
   .bottom .address {
-    padding-right: 5rem; }
+    padding-right: 2.4rem; }
     .bottom .address address {
       margin-top: 1rem;
       margin-bottom: 0; }
@@ -2172,7 +2172,7 @@ main a {
   border-radius: 3px;
   border: 1px solid #ddd;
   height: 35px;
-  margin-bottom: .8rem;
+  margin: .3rem 0 .6rem;
   width: 61px; }
   .box-w img {
     display: block; }
@@ -2180,12 +2180,12 @@ main a {
 #totop {
   background: #f0f0f0;
   border: none;
+  cursor: pointer;
   height: 48px;
   position: absolute;
-  right: 0;
+  right: 35px;
   top: -68px;
-  width: 70px;
-  cursor: pointer; }
+  width: 70px; }
   #totop svg {
     position: absolute;
     top: 15px;
@@ -2589,6 +2589,8 @@ main h2 {
     margin-left: auto;
     margin-right: auto; }
 
+/* =pagination
+---------------------------*/
 .pagination {
   font-size: 1.8rem;
   font-family: "SegoeUIBoldItalic"; }
@@ -2614,6 +2616,26 @@ main h2 {
   .pagination .current {
     background-color: #064ca1; }
 
+/* =/pagination
+---------------------------*/
+/* =delivery
+---------------------------*/
+.companies__list {
+  margin: 3.5rem 0 5rem;
+  padding-top: 3rem; }
+  .companies__list .title {
+    font-size: 1.8rem;
+    color: #000; }
+
+.company__link {
+  border: 1px solid #e6e6e6;
+  height: 8.5rem;
+  width: 20rem; }
+  .company__link:hover {
+    border: 1px solid #064ca1; }
+
+/* =/delivery
+---------------------------*/
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
