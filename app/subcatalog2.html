@@ -224,14 +224,14 @@
 					<p>Когда речь зашла о вашем здоровье и благополучие, вы оказались в правильном интернет-магазине. Здесь вы найдете большой ассортимент медицинских препаратов и витаминов для Вас и вашей семьи по доступным ценам. Наш ассортимент включает в себя лекарственные средства, отпускаемые без рецепта.</p>
 
 					<div id="filters">
-						<button type="button" class="filter-btn filter-btn-current">все препараты (10)</button>
-						<button type="button" class="filter-btn">распродажа (4)</button>
-						<button type="button" class="filter-btn">новинки (5)</button>
-						<button type="button" class="filter-btn">популярное (7)</button>
+						<button type="button" class="filter-btn filter-btn-current" data-filter="*" >все препараты (10)</button>
+						<button type="button" class="filter-btn" data-filter=".sale">распродажа (4)</button>
+						<button type="button" class="filter-btn" data-filter=".new">новинки (5)</button>
+						<button type="button" class="filter-btn" data-filter=".hit">популярное (7)</button>
 					</div>
 					<!-- =goods -->
-					<div class="goods d-flex flex-wrap">
-						<div class="card">
+					<div class="goods d-flex flex-wrap grid">
+						<div class="card grid-item grid-item--height sale new">
 							<img class="card-img" src="tmp/card-1.jpg" alt="" />
 							<div class="card-body">
 								<h3 class="card-title">Orthomol Natal</h3>
@@ -249,7 +249,7 @@
 								<div class="label label-new">new</div>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card grid-item grid-item--height hit">
 							<img class="card-img" src="tmp/card-2.jpg" alt="" />
 							<div class="card-body">
 								<h3 class="card-title">Orthomol Mental</h3>
@@ -266,7 +266,7 @@
 								<div class="label label-hit">hit</div>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card grid-item grid-item--height new hit">
 							<img class="card-img" src="tmp/card-3.jpg" alt="" />
 							<div class="card-body">
 								<h3 class="card-title">Orthomol Vital f</h3>
@@ -284,7 +284,7 @@
 								<div class="label label-hit">hit</div>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card grid-item grid-item--height new">
 							<img class="card-img" src="tmp/card-4.jpg" alt="" />
 							<div class="card-body">
 								<h3 class="card-title">Orthomol Sport</h3>
@@ -301,7 +301,7 @@
 								<div class="label label-new">new</div>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card grid-item grid-item--height sale hit">
 							<img class="card-img" src="tmp/card-5.jpg" alt="" />
 							<div class="card-body">
 								<h3 class="card-title">Orthomol Femin</h3>
@@ -320,7 +320,7 @@
 							</div>
 						</div>
 
-						<div class="card">
+						<div class="card grid-item grid-item--height sale hit">
 							<img class="card-img" src="tmp/card-6.jpg" alt="" />
 							<div class="card-body">
 								<h3 class="card-title">Orthomol AMD extra</h3>
@@ -338,7 +338,7 @@
 								<div class="label label-hit">hit</div>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card grid-item grid-item--height new hit">
 							<img class="card-img" src="tmp/card-7.jpg" alt="" />
 							<div class="card-body">
 								<h3 class="card-title">Orthomol Vital m</h3>
@@ -356,7 +356,7 @@
 								<div class="label label-hit">hit</div>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card grid-item grid-item--height sale new hit">
 							<img class="card-img" src="tmp/card-8.jpg" alt="" />
 							<div class="card-body">
 								<h3 class="card-title">Orthomol Veg one</h3>
@@ -375,7 +375,7 @@
 								<div class="label label-hit">hit</div>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card grid-item grid-item--height hit">
 							<img class="card-img" src="tmp/card-9.jpg" alt="" />
 							<div class="card-body">
 								<h3 class="card-title">Orthomol Aurinor</h3>
@@ -392,7 +392,7 @@
 								<div class="label label-hit">hit</div>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card grid-item grid-item--height">
 							<img class="card-img" src="tmp/card-10.jpg" alt="" />
 							<div class="card-body">
 								<h3 class="card-title">Orthomol Cardio</h3>
@@ -656,6 +656,26 @@
 <script src="//yastatic.net/share2/share.js"></script>
 <script src="/template/js/engine.js"></script>
 <!-- InstanceBeginEditable name="EditRegion5" -->
+<!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+<script src="/template/js/isotope.pkgd.min.js"></script>
+<script src="/template/js/cells-by-column.js"></script>
+
+
+<script>
+
+$grid = $('.grid').isotope({
+  itemSelector: '.grid-item'
+});
+
+$('#filters').on( 'click', 'button', function() {
+	var filterValue = $(this).attr('data-filter');
+	$grid.isotope({ filter: filterValue });	
+   $('#filters').find('.filter-btn-current').removeClass('filter-btn-current');
+    $(this).addClass('filter-btn-current');
+});
+
+
+</script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

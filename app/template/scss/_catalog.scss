@@ -285,6 +285,7 @@ aside{
 
 	.goods{
 		margin-top: .6rem;
+		width: 880px;
 	}
 }
 
@@ -310,5 +311,14 @@ aside{
 	&:hover{
 		background-color: $color4;
 		color: $color2;
+	}
+}
+
+
+.grid{
+	&-item{
+		&--height{
+			height: 378px;
+		}
 	}
 }

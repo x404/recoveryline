@@ -13,7 +13,7 @@ __Используемые в проекте js плагины__
 * Сообщение для устаревших браузеров Outdated Browser v1.1.5[https://github.com/burocratik/outdated-browser](https://github.com/burocratik/outdated-browser) [Демо](http://outdatedbrowser.com/ru)
 * Начертания для знака рубля [http://alexeybychkov.com/blog/typography/rouble-font/](http://alexeybychkov.com/blog/typography/rouble-font/)
 * Валидация полей ввода в формах jquery validation [http://jqueryvalidation.org/](http://jqueryvalidation.org/)
-
+* JS Фильтрация карточек товара Isotope [https://isotope.metafizzy.co/](https://isotope.metafizzy.co/)
 
 ---------------------------------------------------------
 
@@ -22,3 +22,4 @@ __Используемые в проекте js плагины__
 
 
 Каталог tmp содержит временные картинки-заглушки. Каталог при программировании удалить.
+

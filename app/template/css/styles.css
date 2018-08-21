@@ -3464,7 +3464,8 @@ aside {
   .aside-content h1 {
     margin-top: .8rem; }
   .aside-content .goods {
-    margin-top: .6rem; }
+    margin-top: .6rem;
+    width: 880px; }
 
 #filters {
   background-color: #f6f6f7;
@@ -3486,6 +3487,9 @@ aside {
   .filter-btn-current, .filter-btn:hover {
     background-color: #064ca1;
     color: #fff; }
+
+.grid-item--height {
+  height: 378px; }
 
 /* =mobile-menu
 ---------------------------*/
