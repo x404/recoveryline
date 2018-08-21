@@ -131,7 +131,6 @@
 .catalog{
 	&__title{
 		font-family: "SegoeUIRegular";	
-		// color: $color4;
 		margin-top: 18px;
 		text-transform: uppercase;
 	}
@@ -151,18 +150,33 @@
 				img{
 					transform: scale(1.05)
 				}
+				.catalog__pic{
+					border-color: $color4;
+				}
 			}
 		}
 	}
 
 	&__pic{
+		@extend .flex-center;
+		border: 1px solid $color11;
+		height: 85px;
 		margin-left: auto;
 		margin-right: auto;
 		overflow: hidden;
+		transition: .3s border-color;
+		width: 195px;
 		img{
-			border: 1px solid #e6e6e6;
 			transition: .3s transform;
 			vertical-align: top;
+		}
+	}
+
+	.effect-bubba{
+		&:hover{
+			.catalog__pic{
+				border-color: $color11;
+			}
 		}
 	}
 }
