@@ -37,6 +37,23 @@ main{
 }
 
 
+.text{
+	h2{
+		font-size: 1.8rem;
+		color: #666;
+		font-weight: normal;
+		font-family: "SegoeUIRegular";
+		margin-bottom: 1.5rem;
+	}
+
+	ul{
+		li{
+			margin: 5px 0;
+		}
+	}
+}
+
+
 .articles{
 	&__list{
 		margin-top: 2.5rem;

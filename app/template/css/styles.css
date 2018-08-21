@@ -1796,7 +1796,9 @@ a.text-dark:hover, a.text-dark:focus {
 */
 /*** reset ***********/
 ul {
-  list-style: none; }
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1906,12 +1908,12 @@ em strong {
   font-weight: normal;
   font-family: "SegoeUIBoldItalic"; }
 
-.dashed, .menu2__wrapper a, .menu2__wrapper a span, .menu2__wrapper .subnav li a, .breadcrumbs ul li a, .feedback .vcard .email {
+.dashed, .menu2__wrapper a, .menu2__wrapper a span, .menu2__wrapper .subnav li a, .breadcrumbs ul li a, .feedback .vcard .email, .interesting a, .aside__menu > ul > li > ul li a {
   color: #064ca1;
   transition: .3s border-bottom;
   border-bottom: 1px dashed rgba(255, 255, 255, 0);
   text-decoration: none; }
-  .dashed:hover, .menu2__wrapper a:hover, .menu2__wrapper a span:hover, .menu2__wrapper .subnav li a:hover, .breadcrumbs ul li a:hover, .feedback .vcard .email:hover {
+  .dashed:hover, .menu2__wrapper a:hover, .menu2__wrapper a span:hover, .menu2__wrapper .subnav li a:hover, .breadcrumbs ul li a:hover, .feedback .vcard .email:hover, .interesting a:hover, .aside__menu > ul > li > ul li a:hover {
     border-bottom: 1px dashed #064ca1;
     text-decoration: none; }
 
@@ -2543,6 +2545,8 @@ label.error {
 ---------------------------*/
 .recommendation {
   padding-top: 3rem; }
+  .recommendation .card:nth-child(5n) {
+    margin-right: 0; }
 
 /* =producers
 ---------------------------*/
@@ -2627,6 +2631,16 @@ main h2 {
   font-size: 1.6rem;
   font-weight: normal;
   margin-bottom: 1.2rem; }
+
+.text h2 {
+  font-size: 1.8rem;
+  color: #666;
+  font-weight: normal;
+  font-family: "SegoeUIRegular";
+  margin-bottom: 1.5rem; }
+
+.text ul li {
+  margin: 5px 0; }
 
 .articles__list {
   margin-top: 2.5rem; }
@@ -3264,8 +3278,6 @@ main h2 {
   margin-right: 3.1rem;
   padding-top: 2.7rem;
   width: 20rem; }
-  .card:nth-child(5n) {
-    margin-right: 0; }
   .card-img {
     display: block;
     width: auto;
@@ -3386,6 +3398,94 @@ main h2 {
 
 .catalog .effect-bubba:hover .catalog__pic {
   border-color: #e6e6e6; }
+
+.interesting {
+  border-top: 1px solid #ccc;
+  margin: 3rem 0;
+  padding-top: 1.8rem; }
+  .interesting h2 {
+    margin-bottom: 1.5rem; }
+  .interesting a {
+    color: #064ca1; }
+  .interesting ul li {
+    margin: 5px 0; }
+
+aside {
+  flex-shrink: 0;
+  margin-right: 3.5rem;
+  width: 23rem; }
+  aside .visual {
+    margin-top: 17px;
+    border-top: 1px solid #ccc;
+    padding-top: 17px; }
+
+.aside__menu {
+  margin-top: 6rem; }
+  .aside__menu a {
+    color: #808080; }
+  .aside__menu > ul > li {
+    margin: 10px 0; }
+    .aside__menu > ul > li > a {
+      transition: .3s;
+      display: block;
+      padding: 4px 6px;
+      border: 1px solid rgba(255, 255, 255, 0); }
+      .aside__menu > ul > li > a:hover {
+        border-color: #064ca1;
+        color: #064ca1;
+        text-decoration: none; }
+    .aside__menu > ul > li > ul li {
+      padding-left: 1rem;
+      margin: .8rem 0; }
+      .aside__menu > ul > li > ul li a {
+        color: #064ca1; }
+      .aside__menu > ul > li > ul li:before {
+        content: "-";
+        color: #064ca1;
+        padding-right: .3rem; }
+  .aside__menu .current > a {
+    background-color: #064ca1;
+    border-color: #064ca1;
+    color: #fff; }
+    .aside__menu .current > a:hover {
+      background-color: #064ca1;
+      color: #fff; }
+
+.aside-content {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3.5rem;
+  margin-bottom: 2.5rem; }
+  .aside-content .content {
+    flex-grow: 1; }
+  .aside-content .card {
+    margin-right: 1.9rem; }
+    .aside-content .card:nth-child(4n) {
+      margin-right: 0; }
+  .aside-content h1 {
+    margin-top: .8rem; }
+  .aside-content .goods {
+    margin-top: .6rem; }
+
+#filters {
+  background-color: #f6f6f7;
+  display: flex;
+  padding: 1.8rem 2.5rem;
+  margin: 2rem 0 0; }
+
+.filter-btn {
+  background: none;
+  border: 1px solid #064ca1;
+  margin-right: 1.8rem;
+  text-align: center;
+  height: 3rem;
+  cursor: pointer;
+  padding: 0 1.6rem .1rem;
+  color: #064ca1;
+  min-width: 15.5rem;
+  transition: .3s; }
+  .filter-btn-current, .filter-btn:hover {
+    background-color: #064ca1;
+    color: #fff; }
 
 /* =mobile-menu
 ---------------------------*/
