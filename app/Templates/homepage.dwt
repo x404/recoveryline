@@ -89,14 +89,57 @@
 			<div class="col-2 neck__menu">
 				<div class="menu2">
 					<a href="#" title="" class="menucatalog">Каталог товаров</a>
-					<div class="menu2__wrapper">
+					<div class="menu2__wrapper row">
 						<div class="container">
 							<ul class="d-flex justify-content-around">
-								<li><a href="#">меню 1</a></li>
-								<li><a href="#">меню 2</a></li>
-								<li><a href="#">меню 3</a></li>
-								<li><a href="#">меню 4</a></li>
-								<li><a href="#">меню 5</a></li>
+								<li>
+									<a href="#" title=""><span>Обезболивающие средства</span></a>
+									<div class="subnav">
+										<ul>
+											<li><a href="#" title="">Амбене амп</a></li>
+											<li><a href="#" title="">Амбене таб</a></li>
+											<li><a href="#" title="">Липоталон</a></li>
+											<li><a href="#" title="">Аркоксиа </a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" title=""><span>Внутрисуставные инъекции</span></a>
+									<div class="subnav">
+										<ul>
+											<li><a href="#" title="">Остенил</a></li>
+											<li><a href="#" title="">Остенил плюс</a></li>
+											<li><a href="#" title="">Ферматрон</a></li>
+											<li><a href="#" title="">Химовис</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" title=""><span>Спортивное восстановление</span></a>
+									<div class="subnav">
+										<ul>
+											<li><a href="#" title="">Samyr 400</a></li>
+											<li><a href="#" title="">Prefolic </a></li>
+											<li><a href="#" title="">Epargriseovit </a></li>
+											<li><a href="#" title="">Esafosfina 5g</a></li>
+											<li><a href="#" title="">Ferlixit 62,5</a></li>
+											<li><a href="#" title="">Tad 600</a></li>
+											<li><a href="#" title="">Carnitene</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" title=""><span>Коленный сустав</span></a>
+									<div class="subnav">
+										<ul>
+											<li><a href="#" title="">Biofosfina </a></li>
+											<li><a href="#" title="">Amedial plus</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#" title=""><span>Препараты для глаз</span></a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -157,20 +200,24 @@
 						<li><a href="#" title="">Вопросы и Ответы</a></li>
 					</ul>
 					<ul>
-						<li><a href="#" title="">Все препараты</a></li>
-						<li><a href="#" title="">Для женщин</a></li>
-						<li><a href="#" title="">Для мужчин</a></li>
-						<li><a href="#" title="">Для детей</a></li>
-						<li><a href="#" title="">Для спортсменов</a></li>
-						<li><a href="#" title="">Для глаз</a></li>
+						<li><a href="#" title="">Samyr 400</a></li>
+						<li><a href="#" title="">Липоталон</a></li>
+						<li><a href="#" title="">Аркоксиа</a></li>
+						<li><a href="#" title="">Остенил</a></li>
+						<li><a href="#" title="">Ферматрон</a></li>
+						<li><a href="#" title="">Химовис</a></li>
+						<li><a href="#" title="">Ferlixit</a></li>
+						<li><a href="#" title="">Amedial plus</a></li>
 					</ul>
 					<ul>
-						<li class="title-sm">Производители</li>
+						<li><a href="#" title="">Prefolic</a></li>
 						<li><a href="#" title="">Ambene</a></li>
 						<li><a href="#" title="">Orthomol</a></li>
 						<li><a href="#" title="">Epargriseovit</a></li>
 						<li><a href="#" title="">Esafosfina</a></li>
-						<li><a href="#" title="">Biofosfina</a></li>
+						<li><a href="#" title="">Biofosfina</a></li>						
+						<li><a href="#" title="">Tad 600</a></li>
+						<li><a href="#" title="">Carnitene</a></li>
 					</ul>
 				</div>
 			</div>
