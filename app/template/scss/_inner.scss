@@ -124,3 +124,50 @@ main{
 	height: 425px;
 	margin-top: 3rem;
 }
+
+
+
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+
+.effect-bubba .catalog__pic{
+	position: relative;
+}
+.effect-bubba .catalog__pic::before,
+.effect-bubba .catalog__pic::after {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	z-index: 10;
+}
+
+.effect-bubba .catalog__pic::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.effect-bubba .catalog__pic::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+
+.effect-bubba:hover .catalog__pic::before,
+.effect-bubba:hover .catalog__pic::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
