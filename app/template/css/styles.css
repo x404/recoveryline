@@ -1256,8 +1256,8 @@ template {
   .card__description .cost,
   .card__description .price {
     color: #064ca1; }
-    .card__description .cost span,
-    .card__description .price span {
+    .card__description .cost .rur,
+    .card__description .price .rur {
       font-weight: bold;
       color: #808080; }
   .card__description .price {

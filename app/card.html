@@ -265,24 +265,26 @@
 						<div class="card__description">
 							<div class="price">3 090 <span class="rur">i</span></div>
 							<div class="card__info">
-								<div class="d-flex align-items-center count-cost">
-									<div class="card__count count-box d-flex">
-										<button type="button" id="minus">-</button>
-										<input type="number" class="form-control count" value="1" id="quantity">
-										<button type="button" id="plus">+</button>
+								<form action="#" method="post">
+									<div class="d-flex align-items-center count-cost">
+										<div class="card__count count-box d-flex">
+											<button type="button" id="minus">-</button>
+											<input type="number" class="form-control count" value="1" id="quantity" name="shk-count" data-price="3 090">
+											<button type="button" id="plus">+</button>
+										</div>
+										<div class="eq"> = </div>
+										<div class="cost"><span class="shk-price">3 090</span> <span class="rur">i</span></div>
 									</div>
-									<div class="eq"> = </div>
-									<div class="cost">6 180 <span class="rur">i</span></div>
-								</div>
-								<div class="tocart d-flex">
-									<button type="button" class="btn btn-tocart shk-btn">в корзину</button>
-									<button type="button" class="btn btn-buyoneclk btn-red">купить в 1 клик</button>
-								</div>
-								<div class="card__text">
-									<p><strong>Производитель:</strong> Orthomol Pharmazeutische Vertriebs GmbH</p>
-									<p><strong>Модель:</strong> Ортомол Натал - таблетки + капсулы (30 дней)</p>
-									<p><strong>Срок годности:</strong> до 31.08.2019</p>
-								</div>
+									<div class="tocart d-flex">
+										<button type="submit" class="btn btn-tocart shk-btn product__submit">в корзину</button>
+										<button type="button" class="btn btn-buyoneclk btn-red">купить в 1 клик</button>
+									</div>
+									<div class="card__text">
+										<p><strong>Производитель:</strong> Orthomol Pharmazeutische Vertriebs GmbH</p>
+										<p><strong>Модель:</strong> Ортомол Натал - таблетки + капсулы (30 дней)</p>
+										<p><strong>Срок годности:</strong> до 31.08.2019</p>
+									</div>
+								</form>
 							</div>
 						</div>						
 					</div>

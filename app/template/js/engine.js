@@ -132,6 +132,79 @@ $(document).ready(function(){
 		}
 	}); 
 
+
+	// products counters
+	$('.card__count #plus').on('click', function(e){
+		e.preventDefault();
+		var $this = $(this),
+			form = $this.closest('form'),
+			submit = form.find('.product__submit'),
+			priceEl = form.find('.shk-price'),
+			countEl = $this.prev('input'),
+			price = countEl.data('price').split(' ').join(''),
+			cnt = parseInt(countEl.val())+1,
+			cost = 0;
+
+		cost = cnt * price;
+
+		countEl.val(cnt);
+		priceEl.text(splitNums(' ', cost.toString()));
+		$('.product__submit-active').removeClass('product__submit-active');
+		submit.addClass('product__submit-active');
+		submit.removeAttr('disabled');
+	});
+
+	$('.card__count #minus').on('click', function(e){
+		e.preventDefault();
+		var $this = $(this),
+			form = $this.closest('form'),
+			submit = form.find('.product__submit'),
+			priceEl = $this.closest('form').find('.shk-price'),
+			countEl = $this.next('input'),
+			price = countEl.data('price').split(' ').join(''),
+			cnt = parseInt(countEl.val())-1,
+			cost = 0;
+
+
+		$('.product__submit-active').removeClass('product__submit-active');
+
+		if ( cnt <= 0 ) {
+			cnt = 0;
+			submit.prop('disabled', 'disabled');
+		} else {
+			submit.addClass('product__submit-active');			
+		};
+
+		cost = cnt * price;
+		countEl.val(cnt);
+		priceEl.text(splitNums(' ', cost.toString()));
+	});
+
+
+	$('#quantity').keyup(function() {
+		var $this = $(this),
+			form = $this.closest('form'),
+			submit = form.find('.product__submit'),
+			priceEl = form.find('.shk-price'),
+			price = $this.data('price').split(' ').join(''),
+			cnt = 0,
+			cost = 0;
+
+		cnt = $(this).val();
+
+		$('.product__submit-active').removeClass('product__submit-active');		
+		if ( cnt <= 0 ) {
+			cnt = 0;
+			submit.prop('disabled', 'disabled');
+		} else {
+			submit.removeAttr('disabled');
+			submit.addClass('product__submit-active');			
+		};
+
+		cost = cnt *  price;
+		priceEl.text(splitNums(' ', cost.toString()));
+	});
+
 });
 	
 
@@ -201,3 +274,10 @@ $(function(){
 		}
 	})
 });
+
+
+function splitNums(delimiter, str){   
+	str = str.replace(/(\d+)(\.\d+)?/g,
+	function(c,b,a){return b.replace(/(\d)(?=(\d{3})+$)/g, '$1'+delimiter) + (a ? a : '')});
+	return str;
+}
