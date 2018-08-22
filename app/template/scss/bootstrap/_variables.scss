@@ -187,7 +187,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1250px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -202,7 +202,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1200px
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -319,7 +319,7 @@ $hr-margin-y:                 $spacer !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem !default;
+$table-cell-padding:          .5rem !default;
 $table-cell-padding-sm:       .3rem !default;
 
 $table-bg:                    transparent !default;
@@ -327,7 +327,7 @@ $table-accent-bg:             rgba($black, .05) !default;
 $table-hover-bg:              rgba($black, .075) !default;
 $table-active-bg:             $table-hover-bg !default;
 
-$table-border-width:          $border-width !default;
+$table-border-width:          1px !default;
 $table-border-color:          $gray-300 !default;
 
 $table-head-bg:               $gray-200 !default;

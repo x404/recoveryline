@@ -36,6 +36,19 @@ $(document).ready(function(){
 		arrows : true
 	});
 
+	$('#similar-carousel').slick({
+		dots: false,
+		prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
+		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>',
+		slidesToShow: 4,
+		slidesToScroll: 2,
+		autoplay: false,
+		autoplaySpeed: 4000,
+		adaptiveHeight: true,
+		arrows : true,
+		appendArrows : $('.prevnext')
+	});
+
 
 	// mobile-menu
 	$('#navbar').each(function(){

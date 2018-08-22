@@ -38,18 +38,35 @@ main{
 
 
 .text{
-	h2{
-		font-size: 1.8rem;
+	h2, h3{
 		color: #666;
 		font-weight: normal;
 		font-family: "SegoeUIRegular";
 		margin-bottom: 1.5rem;
 	}
 
+	h2{
+		font-size: 1.8rem;
+	}
+	h3{
+		font-size: 1.6rem;
+	}
+
 	ul{
 		li{
 			margin: 5px 0;
 		}
+	}
+
+	table{
+		margin: 2.5rem 0;
+		td{
+			vertical-align: top;
+		}
+
+	}
+	.table-bordered td, .table-bordered th{
+		border-color: #ccc !important;
 	}
 }
 
@@ -187,4 +204,14 @@ main{
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+
+
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
 }
