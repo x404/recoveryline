@@ -233,25 +233,30 @@
 									<div class="label label-hit">hit</div>
 								</div>
 							</div>
-							<div class="card__thumbs" id="card__thumbs">
+							<div class="card__thumbs" id="card__thumbs" />
 								<div>
-									<a href="/images/card/bigpic.jpg" title="" class="thumb-link">
-										<img class="cloudzoom-gallery cloudzoom-gallery-active" src="/images/card/thumb-1.jpg" alt="" data-cloudzoom='useZoom:"#mainimg", image:"/images/card/bigpic.jpg", zoomImage:"/images/card/bigpic.jpg"'>
+									<a href="/tmp/pic1.jpg" title="" class="thumb-link thumb-link-active">
+										<img src="/images/thumb-1.jpg" alt="" />
 									</a>
 								</div>
 								<div>
-									<a href="/tmp/2.jpg" title="" class="thumb-link">
-										<img class="cloudzoom-gallery" src="/images/card/thumb-2.jpg" alt="" data-cloudzoom='useZoom:"#mainimg", image:"/tmp/2.jpg", zoomImage:"/images/card/2.jpg"'>
+									<a href="/images/card.jpg" title="" class="thumb-link">
+										<img src="/images/thumb-2.jpg" alt="" />
 									</a>
 								</div>
 								<div>
-									<a href="/tmp/9.jpg" title="" class="thumb-link">
-										<img class="cloudzoom-gallery" src="/images/card/thumb-3.jpg" alt="" data-cloudzoom='useZoom:"#mainimg", image:"/tmp/9.jpg", zoomImage:"/images/card/9.jpg"'>
+									<a href="/tmp/pic3.jpg" title="" class="thumb-link">
+										<img src="/images/thumb-3.jpg" alt="" />
 									</a>
 								</div>
 								<div>
-									<a href="/tmp/4.jpg" title="" class="thumb-link">
-										<img class="cloudzoom-gallery" src="/images/card/thumb-4.jpg" alt="" data-cloudzoom='useZoom:"#mainimg", image:"/tmp/4.jpg", zoomImage:"/images/card/4.jpg"'>
+									<a href="/tmp/pic4.jpg" title="" class="thumb-link">
+										<img src="/images/thumb-4.jpg" alt="" />
+									</a>
+								</div>
+								<div>
+									<a href="/tmp/pic5.jpg" title="" class="thumb-link">
+										<img src="/images/thumb-1.jpg" alt="" />
 									</a>
 								</div>
 							</div>
@@ -555,22 +560,27 @@
 <script src="/template/js/engine.js"></script>
 <!-- InstanceBeginEditable name="EditRegion5" -->
 <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
-<script src="/template/js/isotope.pkgd.min.js"></script>
-<script src="/template/js/cells-by-column.js"></script>
-
-
 <script>
 
-$grid = $('.grid').isotope({
-  itemSelector: '.grid-item'
-});
+var thumbLink = document.querySelectorAll('.thumb-link'),
+	mainimg = document.querySelector('#mainimg');
+for (var i = 0; i < thumbLink.length; i++) {
+	thumbLink[i].addEventListener("click", function(e){
+		e.preventDefault();
+		const $this = this,
+			  newsrc = $this.href;
+		document.querySelector('.thumb-link-active').classList.remove('thumb-link-active');
+		$this.classList.add('thumb-link-active');
 
-$('#filters').on( 'click', 'button', function() {
-	var filterValue = $(this).attr('data-filter');
-	$grid.isotope({ filter: filterValue });	
-   $('#filters').find('.filter-btn-current').removeClass('filter-btn-current');
-    $(this).addClass('filter-btn-current');
-});
+		mainimg.src = newsrc;
+
+		// mainimg.classList.add('fadeOut');
+		
+		// setTimeout(function(){
+		// 	mainimg.classList.remove('fadeOut');
+		// },400);
+}, false)}
+
 
 
 </script>

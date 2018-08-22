@@ -302,7 +302,9 @@
 
 
 
-
+.fadeOut{
+	opacity: 0;
+}
 
 .card{
 	&__mainimg{
@@ -311,6 +313,7 @@
 		width: 485px;
 		padding: 25px 0;
 		position: relative;
+		transition: .3s;
 	}
 	&__info{
 		margin-left: 2.5rem;
@@ -387,6 +390,46 @@
 		padding: 1.2rem 0;
 		strong{
 			@extend .bold;
+		}
+	}
+
+	&__gallery{
+		#mainimg{
+			transition: .3s opacity;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__thumbs{
+		margin-top: 1.8rem;
+		width: 390px;
+		margin-left: auto;
+		margin-right: auto;
+		img{
+			display: block;
+		}
+		.thumb-link{
+			@extend .flex-center;
+			background-color: $color2;
+			border: 1px solid $color11;
+			height: 78px;
+			margin-left: auto;
+			margin-right: auto;
+			opacity: .55;
+			padding-top: 8px;
+			transition: .3s opacity;
+			width: 78px;
+			&-active,
+			&:hover{
+				opacity: 1;
+			}
+		}
+		.slick-arrow{
+			background-image: url(../images/arrow2.png);
+			height: 13px;
+			width: 18px;
+			margin-top: -6px;
 		}
 	}
 }

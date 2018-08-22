@@ -1023,12 +1023,16 @@ template {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
+.fadeOut {
+  opacity: 0; }
+
 .card__mainimg {
   background-color: #fff;
   border: 1px solid #e6e6e6;
   width: 485px;
   padding: 25px 0;
-  position: relative; }
+  position: relative;
+  transition: .3s; }
 
 .card__info {
   margin-left: 2.5rem; }
@@ -1083,6 +1087,36 @@ template {
   border-bottom: 1px solid #ccc;
   margin-top: 2.5rem;
   padding: 1.2rem 0; }
+
+.card__gallery #mainimg {
+  transition: .3s opacity;
+  max-width: 100%;
+  height: auto; }
+
+.card__thumbs {
+  margin-top: 1.8rem;
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto; }
+  .card__thumbs img {
+    display: block; }
+  .card__thumbs .thumb-link {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    height: 78px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .55;
+    padding-top: 8px;
+    transition: .3s opacity;
+    width: 78px; }
+    .card__thumbs .thumb-link-active, .card__thumbs .thumb-link:hover {
+      opacity: 1; }
+  .card__thumbs .slick-arrow {
+    background-image: url(../images/arrow2.png);
+    height: 13px;
+    width: 18px;
+    margin-top: -6px; }
 
 .count-box {
   font-family: "SegoeUIBold"; }
@@ -1932,7 +1966,7 @@ input::-moz-focus-inner {
   -webkit-flex: 1;
   flex: 1; }
 
-.flex-center, .box-w, .producer__link, .media__title, .pagination a, .pagination span, .company__link, .feedback .sending,
+.flex-center, .card__thumbs .thumb-link, .box-w, .producer__link, .media__title, .pagination a, .pagination span, .company__link, .feedback .sending,
 .feedback .thank, .card-link, .catalog__pic {
   display: flex;
   align-items: center;
