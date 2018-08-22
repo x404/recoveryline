@@ -78,40 +78,40 @@
 		position: absolute;
 		top: 7px;
 	}
+}
 
-	.label{
-		$h: 22px;
-		color: $color2;
-		font-family: "SegoeUIItalic";
-		margin-bottom: .2rem;
-		position: relative;
-		text-align: center;
-		width: 35px;
+.label{
+	$h: 22px;
+	color: $color2;
+	font-family: "SegoeUIItalic";
+	margin-bottom: .2rem;
+	position: relative;
+	text-align: center;
+	width: 35px;
+	height: $h;
+	&:after{
+		@extend .before;
 		height: $h;
+		width: 5px;
+		right: -5px;
+		top: 0;
+	}
+	&-sale{
+		background-color: #ea1100;
 		&:after{
-			@extend .before;
-			height: $h;
-			width: 5px;
-			right: -5px;
-			top: 0;
+			background: url(../images/label-sale.png) no-repeat left top;
 		}
-		&-sale{
-			background-color: #ea1100;
-			&:after{
-				background: url(../images/label-sale.png) no-repeat left top;
-			}
+	}
+	&-new{
+		background-color: #40ab48;
+		&:after{
+			background: url(../images/label-new.png) no-repeat left top;
 		}
-		&-new{
-			background-color: #40ab48;
-			&:after{
-				background: url(../images/label-new.png) no-repeat left top;
-			}
-		}
-		&-hit{
-			background-color: #0099ff;
-			&:after{
-				background: url(../images/label-hit.png) no-repeat left top;
-			}
+	}
+	&-hit{
+		background-color: #0099ff;
+		&:after{
+			background: url(../images/label-hit.png) no-repeat left top;
 		}
 	}
 }
@@ -156,6 +156,7 @@
 	}
 
 	&__pic{
+		background-color: $color2;
 		@extend .flex-center;
 		border: 1px solid $color11;
 		height: 85px;

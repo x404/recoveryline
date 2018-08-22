@@ -1,3 +1,5 @@
+@import 'colors';
+
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins/hover";
@@ -22,7 +24,6 @@
 
 // @import 'grid';
 @import 'fonts';
-@import 'colors';
 @import 'elements';
 @import 'flex';
 @import 'sprite';
