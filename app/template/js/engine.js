@@ -169,10 +169,10 @@ $(document).ready(function(){
 		$('.product__submit-active').removeClass('product__submit-active');
 
 		if ( cnt <= 0 ) {
-			cnt = 0;
-			submit.prop('disabled', 'disabled');
+			cnt = 1;
+			// submit.prop('disabled', 'disabled');
 		} else {
-			submit.addClass('product__submit-active');			
+			// submit.addClass('product__submit-active');			
 		};
 
 		cost = cnt * price;
@@ -181,7 +181,7 @@ $(document).ready(function(){
 	});
 
 
-	$('#quantity').keyup(function() {
+	$('.quantity').keyup(function() {
 		var $this = $(this),
 			form = $this.closest('form'),
 			submit = form.find('.product__submit'),
@@ -192,15 +192,17 @@ $(document).ready(function(){
 
 		cnt = $(this).val();
 
-		$('.product__submit-active').removeClass('product__submit-active');		
+		// $('.product__submit-active').removeClass('product__submit-active');		
+
 		if ( cnt <= 0 ) {
-			cnt = 0;
-			submit.prop('disabled', 'disabled');
+			cnt = 1;
+			// submit.prop('disabled', 'disabled');
 		} else {
-			submit.removeAttr('disabled');
-			submit.addClass('product__submit-active');			
+			// submit.removeAttr('disabled');
+			// submit.addClass('product__submit-active');			
 		};
 
+		$this.val(cnt);
 		cost = cnt *  price;
 		priceEl.text(splitNums(' ', cost.toString()));
 	});

@@ -306,6 +306,31 @@
 	opacity: 0;
 }
 
+.card__description,
+.count-cost
+{
+	.cost,
+	.price{
+		color: $color4;
+		.rur{
+			font-weight: bold;
+			color: $color7;
+		}			
+	}
+
+	.cost,
+	.eq{
+		font-size: 1.8rem;
+		font-family: "SegoeUIBold";
+	}
+
+	.eq{
+		color: $color7;
+		padding: 0 1rem;
+	}
+}
+
+
 .card{
 	&__mainimg{
 		background-color: $color2;
@@ -321,14 +346,7 @@
 
 	&__description{
 		flex-grow: 1;
-		.cost,
-		.price{
-			color: $color4;
-			.rur{
-				font-weight: bold;
-				color: $color7
-			}			
-		}
+
 
 
 		.price{
@@ -350,16 +368,7 @@
 			margin-top: 2.5rem;
 		}
 
-		.cost,
-		.eq{
-			font-size: 1.8rem;
-			font-family: "SegoeUIBold";
-		}
 
-		.eq{
-			color: $color7;
-			padding: 0 1rem;			
-		}
 
 		.tocart{
 			margin-top: 2.5rem;
@@ -373,7 +382,7 @@
 					padding-left: 1.2rem;
 					padding-right: 1.2rem;
 				}
-				&-buyoneclk{
+				&-order-one-click{
 					background-color: #ea1100;
 					padding-left: 2.8rem;
 					padding-right: 2.8rem;
@@ -457,7 +466,7 @@
 		width: 20px;
 	}
 
-	.count,
+	.quantity,
 	.shk_count_button {
 		@extend .bold;
 		font-size: 1.8rem;
@@ -486,7 +495,7 @@
 	}
 
 
-	.count{
+	.quantity{
 		background-color: #f7f7f9;
 		width: 40px;
 		border-left: none;
@@ -555,6 +564,90 @@
 		}
 		&-next{
 			right: 0;
+		}
+	}
+}
+
+#order-one-click{
+	text-align: center;
+	.modal{
+		&-content{
+			padding-top: 1.8rem;
+		}
+	}
+	.modal-dialog{
+		width: 490px;
+	}	
+
+	.close-modal{
+		right: 0;
+		left: auto;
+	}
+
+	label{
+		color: $color7;
+		display: block;
+		// margin-bottom: 0;
+	}
+
+	.form-control{
+		height: 3rem;
+		color: $color4;
+		text-align: center;
+		width: 24.5rem;
+	}
+	
+	.form-group{
+		margin-top: .7rem;
+	}
+
+	.policy{
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+
+	.user-access:not(checked)+label{
+		&:before{
+			left: 1px;
+			top: 9px;
+		}
+		&:after{
+			top: 11px;
+		}
+	}
+
+	.count-cost{
+		margin: 1.4rem 0 2.1rem;
+	}
+
+	.btn{
+		margin-top: 3.3rem;
+	}
+
+	.order{
+		&__title{
+			@extend .bold;
+			color: $color4;
+			font-size: 1.8rem;
+			text-transform: uppercase;
+		}
+		&__price{
+			@extend .bold;
+			background: $color11;
+			color: $color4;
+			display: inline-block;
+			font-size: 2.4rem;
+			margin-top: .6rem;
+			padding: .4rem 2.6rem;
+			.rur{
+				font-weight: bold;
+				color: $color7;
+			}
+		}
+
+		&__pic{
+			margin-top: 2.8rem;
 		}
 	}
 }

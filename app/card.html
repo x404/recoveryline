@@ -269,7 +269,7 @@
 									<div class="d-flex align-items-center count-cost">
 										<div class="card__count count-box d-flex">
 											<button type="button" id="minus">-</button>
-											<input type="number" class="form-control count" value="1" id="quantity" name="shk-count" data-price="3 090">
+											<input type="number" class="quantity" value="1" id="quantity" name="shk-count" data-price="3 090">
 											<button type="button" id="plus">+</button>
 										</div>
 										<div class="eq"> = </div>
@@ -277,7 +277,7 @@
 									</div>
 									<div class="tocart d-flex">
 										<button type="submit" class="btn btn-tocart shk-btn product__submit">в корзину</button>
-										<button type="button" class="btn btn-buyoneclk btn-red">купить в 1 клик</button>
+										<button type="button" class="btn btn-order-one-click btn-red" data-toggle="modal" data-target="#order-one-click">купить в 1 клик</button>
 									</div>
 									<div class="card__text">
 										<p><strong>Производитель:</strong> Orthomol Pharmazeutische Vertriebs GmbH</p>
@@ -720,6 +720,66 @@
 <div id="outdated"></div>
 
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<!-- =modal callback -->
+<div class="modal fade" id="order-one-click" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal__body">
+				<div class="container">
+				    <form action="/" method="post" class="form-policy" id="order-one-click-form">
+						<fieldset>
+							<p class="order__title">Orthomol Veg one</p>
+							<div class="order__price">3 090 <span class="rur">i</span></div>
+
+							<div class="order__pic"><img src="/images/middle-pic.jpg" alt="" /></div>
+
+
+							<div class="d-flex align-items-center justify-content-center count-cost">
+								<div class="card__count count-box d-flex">
+									<button type="button" id="minus">-</button>
+									<input type="number" class="quantity" value="1" id="quantity" name="shk-count" data-price="3 090">
+									<button type="button" id="plus">+</button>
+								</div>
+								<div class="eq"> = </div>
+								<div class="cost"><span class="shk-price">3 090</span> <span class="rur">i</span></div>
+							</div>
+
+
+							<div class="form-group">
+								<label for="qname">имя *</label>
+								<input type="text" id="qname" name="name" class="form-control required" value="" placeholder="имя" tabindex="10" /><span class="error"></span>
+							</div>
+							<div class="form-group">
+								<label for="qemail">e-mail *</label>
+								<input type="email" id="qemail" name="email" class="email form-control required" value="" placeholder="e-mail" tabindex="11" /><span class="error"></span>
+							</div>
+
+							<div class="form-group">
+								<label for="qtel">телефон *</label>
+								<input type="tel" id="qtel" name="tel" class="form-control required" value="" placeholder="телефон" tabindex="12" /><span class="error"></span>
+							</div>
+							
+							<input type="hidden" name="workemail" value="">
+							<input type="submit" name="qorder_submit" class="submit btn" tabindex="13" value="отправить" />
+							<div class="policy">
+								<input type="checkbox" id="qcheckbox" value="" name="checkbox" checked="checked" class="user-access" tabindex="14">
+								<label for="qcheckbox">Я Согласен на обработку персональных данных и принимаю условия <a href="#" title="" target="_blank" class="dashed">Пользовательского соглашения</a></label>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
+				<svg width="10" height="10">
+					<line x1="0" y1="0" x2="10" y2="10"></line>
+					<line x1="10" y1="0" x2="0" y2="10"></line>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- =/modal callback -->
+
 <!-- InstanceEndEditable -->
 
 <!-- =modal callback -->
