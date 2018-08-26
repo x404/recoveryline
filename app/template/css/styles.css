@@ -5362,7 +5362,10 @@ aside {
     justify-content: center; }
   .service__cell {
     width: 33%;
-    margin: .8rem 0; } }
+    margin: .8rem 0; }
+  .feedback {
+    width: 100%;
+    margin-top: 0; } }
 
 @media (max-width: 767px) {
   #home-carousel .slide .text1 {
@@ -5385,7 +5388,11 @@ aside {
   main h1,
   main h2,
   main h3 {
-    text-align: center; } }
+    text-align: center; }
+  .feedback__form .row {
+    display: block; }
+  .feedback__form .form-control {
+    margin-top: 1rem; } }
 
 @media (max-width: 480px) {
   .slide .text1 {

@@ -31,7 +31,7 @@
 
 	.pagination{
 		ul{
-			
+
 		}
 	}
 }
@@ -45,6 +45,11 @@
 	.service__cell{
 		width: 33%;
 		margin: .8rem 0;
+	}
+
+	.feedback{
+		width: 100%;
+		margin-top: 0;
 	}
 }
 
@@ -91,6 +96,15 @@
 		h3
 		{
 			text-align: center;
+		}
+	}
+
+	.feedback__form{
+		.row{
+			display: block;
+		}
+		.form-control{
+			margin-top: 1rem;
 		}
 	}
 
