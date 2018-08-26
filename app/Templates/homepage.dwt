@@ -41,11 +41,11 @@
 				<nav id="navbar" class="mainnav">
 					<div class="mainnav__list">
 						<ul class="nav mainnav d-flex flex-wrap justify-content-lg-between">
-							<li><a href="about.html">О компании</a></li>
+							<li><a href="../about.html">О компании</a></li>
 							<li class="active"><span>Акции</span></li>
-							<li><a href="contacts.html">Контакты</a></li>
-							<li><a href="articles.html">Статьи и Обзоры</a></li>
-							<li><a href="delivery.html">Доставка и Оплата</a></li>
+							<li><a href="../contacts.html">Контакты</a></li>
+							<li><a href="../articles.html">Статьи и Обзоры</a></li>
+							<li><a href="../delivery.html">Доставка и Оплата</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -85,12 +85,12 @@
 				<div class="subnav">
 					<ul>
 						<li class="folder nav-lev-1">
-							<a href="#" title="">Обезболивающие средства</a>
+							<a href="../catalog.html" title="">Обезболивающие средства</a>
 							<ul>
-								<li><a href="#" title="">Амбене амп</a></li>
-								<li><a href="#" title="">Амбене таб</a></li>
-								<li><a href="#" title="">Липоталон</a></li>
-								<li><a href="#" title="">Аркоксиа </a></li>
+								<li><a href="../card.html" title="">Амбене амп</a></li>
+								<li><a href="../card.html" title="">Амбене таб</a></li>
+								<li><a href="../card.html" title="">Липоталон</a></li>
+								<li><a href="../card.html" title="">Аркоксиа </a></li>
 							</ul>							
 						</li>
 					</ul>
@@ -99,10 +99,10 @@
 							<a href="#" title="">Внутрисуставные инъекции</a>
 							<div class="subnav">
 								<ul>
-									<li><a href="#" title="">Остенил</a></li>
-									<li><a href="#" title="">Остенил плюс</a></li>
-									<li><a href="#" title="">Ферматрон</a></li>
-									<li><a href="#" title="">Химовис</a></li>
+									<li><a href="../card.html" title="">Остенил</a></li>
+									<li><a href="../card.html" title="">Остенил плюс</a></li>
+									<li><a href="../card.html" title="">Ферматрон</a></li>
+									<li><a href="../card.html" title="">Химовис</a></li>
 								</ul>
 							</div>
 						</li>

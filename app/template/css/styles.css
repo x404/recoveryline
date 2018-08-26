@@ -4006,9 +4006,10 @@ label.error {
 .producers {
   border-top: 1px solid #ccc;
   margin-top: 2.5rem;
-  padding: 2.5rem 0; }
+  padding: 2.5rem 0 .5rem; }
 
 .producer__link {
+  margin-bottom: 2rem;
   background: #fff;
   border: 1px solid #e6e6e6;
   height: 86px;
@@ -5292,7 +5293,10 @@ aside {
     display: none; }
   .footer {
     text-align: center !important;
-    padding-bottom: 2rem; } }
+    padding-bottom: 2rem; }
+  #callback .form-control {
+    font-size: 2.4rem;
+    height: 4rem; } }
 
 @media (max-width: 576px) {
   .bottom .manual-menu ul:nth-child(3) {
@@ -5318,7 +5322,7 @@ aside {
     text-align: center; }
   #totop {
     right: 0;
-    top: -20px; } }
+    top: -33px; } }
 
 @media (max-width: 340px) {
   .header {
@@ -5327,3 +5331,60 @@ aside {
       margin-left: 50px; }
       .header .logo img {
         max-width: 75%; } }
+
+@media (max-width: 1250px) {
+  #home-carousel .slide img {
+    height: 250px;
+    width: auto; }
+  #home-carousel .slide .text1 {
+    top: 15%; }
+  #home-carousel .slide .text2 {
+    top: 45%; }
+  .goods {
+    justify-content: center; }
+  .recommendation .card:nth-child(5n) {
+    margin-right: 3.1rem; } }
+
+@media (max-width: 991px) {
+  .services__row {
+    justify-content: center; }
+  .service__cell {
+    width: 33%;
+    margin: .8rem 0; } }
+
+@media (max-width: 767px) {
+  #home-carousel .slide .text1 {
+    top: 13%; }
+  #home-carousel .slide .text2 {
+    top: 40%;
+    width: 98%; } }
+
+@media (max-width: 570px) {
+  #home-carousel .slide .text1 {
+    top: 10%; }
+  #home-carousel .slide .text2 {
+    right: 1%;
+    width: 98%; }
+  .text,
+  .about,
+  .recommendation {
+    text-align: justify; } }
+
+@media (max-width: 480px) {
+  .slide .text1 {
+    font-size: 2.4rem; }
+  .service__cell {
+    width: 50%; }
+    .service__cell a {
+      justify-content: center; }
+  .card {
+    margin-left: 1rem;
+    margin-right: 1rem !important; } }
+
+@media (max-width: 460px) {
+  #home-carousel {
+    display: none; }
+  .service__cell {
+    margin: 1.5rem 0;
+    text-align: center;
+    width: 100%; } }

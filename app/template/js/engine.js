@@ -20,7 +20,63 @@ $(document).ready(function(){
 		autoplay: false,
 		autoplaySpeed: 4000,
 		adaptiveHeight: true,
-		arrows : true
+		arrows : true,
+		responsive: [
+			{
+			  breakpoint: 1250,
+			  settings: {
+			    slidesToShow: 3,
+			    slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 991,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 767,
+			  settings: {
+			  	arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+		        centerMode: true,
+		        centerPadding: '90px'
+			  }
+			},
+			{
+			  breakpoint: 500,
+			  settings: {
+			  	arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+		        centerMode: true,
+		        centerPadding: '60px'
+			  }
+			},
+			{
+			  breakpoint: 420,
+			  settings: {
+			  	arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+		        centerMode: true,
+		        centerPadding: '30px'
+			  }
+			},
+			{
+			  breakpoint: 370,
+			  settings: {
+			  	arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+		        centerMode: true,
+		        centerPadding: '8px'
+			  }
+			}
+	    ]
 	});
 
 

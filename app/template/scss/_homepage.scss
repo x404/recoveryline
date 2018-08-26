@@ -96,12 +96,12 @@
 ---------------------------*/
 .producers{
 	border-top: 1px solid $color9;
-	// border-bottom: 1px solid $color9;
 	margin-top: 2.5rem;
-	padding: 2.5rem 0;
+	padding: 2.5rem 0 .5rem;
 }
 .producer{
 	&__link{
+		margin-bottom: 2rem;
 		@extend .flex-center;
 		background: $color2;
 		border: 1px solid #e6e6e6;
