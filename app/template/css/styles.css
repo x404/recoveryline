@@ -5355,7 +5355,18 @@ aside {
     justify-content: center; }
     .articles__list > div {
       margin-left: 1rem;
-      margin-right: 1rem; } }
+      margin-right: 1rem; }
+  #filters {
+    padding: 0 .5rem;
+    min-width: 0; }
+    #filters .group-btn {
+      margin-right: 1rem;
+      padding-left: .5rem;
+      padding-right: .5rem; }
+  .aside-content .goods {
+    flex-grow: 1;
+    margin-left: 1rem;
+    width: auto; } }
 
 @media (max-width: 991px) {
   .services__row {
@@ -5365,14 +5376,29 @@ aside {
     margin: .8rem 0; }
   .feedback {
     width: 100%;
-    margin-top: 0; } }
+    margin-top: 0; }
+  .page-error {
+    background-size: 60%; }
+  .error-title {
+    padding-right: 0; }
+  #filters {
+    flex-wrap: wrap;
+    justify-content: center; }
+    #filters .group-btn {
+      margin-bottom: 1rem; }
+  .aside-content .card {
+    margin-right: .9rem; } }
 
 @media (max-width: 767px) {
   #home-carousel .slide .text1 {
     top: 13%; }
   #home-carousel .slide .text2 {
     top: 40%;
-    width: 98%; } }
+    width: 98%; }
+  aside {
+    display: none; }
+  .aside-content .goods {
+    margin-left: 6rem; } }
 
 @media (max-width: 576px) {
   #home-carousel .slide .text1 {
@@ -5380,6 +5406,9 @@ aside {
   #home-carousel .slide .text2 {
     right: 1%;
     width: 98%; }
+  .catalog__item {
+    margin: 2rem 0;
+    width: 90%; }
   .text,
   .about,
   .recommendation,
@@ -5392,7 +5421,21 @@ aside {
   .feedback__form .row {
     display: block; }
   .feedback__form .form-control {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  .page-error {
+    background-position: center top 100px;
+    padding-top: 0;
+    min-height: 0; }
+    .page-error .error-title {
+      text-align: center !important; }
+    .page-error .box {
+      float: none;
+      margin-left: auto;
+      margin-right: auto; } }
+
+@media (max-width: 490px) {
+  .aside-content .goods {
+    margin-left: 2.5rem; } }
 
 @media (max-width: 480px) {
   .slide .text1 {
@@ -5411,4 +5454,15 @@ aside {
   .service__cell {
     margin: 1.5rem 0;
     text-align: center;
-    width: 100%; } }
+    width: 100%; }
+  #filters .group-btn {
+    margin-right: 0; }
+  .aside-content .goods {
+    margin-left: 0; }
+  .aside-content .card {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important; }
+  .text iframe {
+    max-width: 100%;
+    height: auto; } }
