@@ -5228,6 +5228,10 @@ aside {
 ::-ms-clear {
   display: none; }
 
+@media (max-width: 1250px) {
+  .bottom .title-sm {
+    font-size: 1.2rem; } }
+
 @media (max-width: 1199px) {
   .qcart__content {
     padding-right: 1.5rem; }
@@ -5248,7 +5252,21 @@ aside {
     position: relative;
     left: 50px; }
   .menu2__wrapper .subnav {
-    top: 72px; } }
+    top: 72px; }
+  .manual-menu {
+    flex-wrap: wrap; }
+  .bottom .title-sm {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    text-align: left !important; }
+  .bottom .social__box {
+    padding-left: 0; }
+  .bottom .box-w,
+  .bottom .social__box a {
+    margin-right: .5rem; }
+    .bottom .box-w:last-child,
+    .bottom .social__box a:last-child {
+      margin-right: 0; } }
 
 @media (max-width: 767px) {
   .sisea-search-form {
@@ -5265,7 +5283,22 @@ aside {
       .neck .qcart a {
         margin-left: 3rem; }
       .neck .qcart__content {
-        padding-left: 0; } }
+        padding-left: 0; }
+  .bottom .address {
+    margin-bottom: 1.5rem; }
+  .bottom .manual-menu ul:nth-child(3) {
+    display: none; }
+  .kreotif-logo {
+    display: none; }
+  .footer {
+    text-align: center !important;
+    padding-bottom: 2rem; } }
+
+@media (max-width: 576px) {
+  .bottom .manual-menu ul:nth-child(3) {
+    display: block; }
+  .bottom .title-sm {
+    text-align: center !important; } }
 
 @media (max-width: 450px) {
   .header .logo {
@@ -5277,7 +5310,15 @@ aside {
   .header .logo {
     margin-left: 20px; }
     .header .logo img {
-      max-width: 70%; } }
+      max-width: 70%; }
+  .bottom .manual-menu {
+    display: block !important;
+    text-align: center; }
+  .share {
+    text-align: center; }
+  #totop {
+    right: 0;
+    top: -20px; } }
 
 @media (max-width: 340px) {
   .header {

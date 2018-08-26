@@ -247,12 +247,11 @@
 <!-- TemplateBeginEditable name="EditRegion3" -->
 
 <!-- TemplateEndEditable -->
-
 <!-- =bottom -->
 <div class="bottom">
 	<div class="container">
 		<div class="row">
-			<div class="col-2 text-right">
+			<div class="col-lg-2 col-sm-3 text-center text-sm-right">
 				<div class="address">
 					<a href="/" title=""><img src="/template/images/logo.png" alt="" width="210" height="55" /></a>
 					<address>
@@ -264,8 +263,8 @@
 					<button type="button" class="callback" data-toggle="modal" data-target="#callback">обратный звонок</button>
 				</div>
 			</div>
-			<div class="col-3">
-				<div class="d-flex justify-content-around">
+			<div class="col-lg-3 col-sm-5">
+				<div class="manual-menu d-flex justify-content-around">
 					<ul>
 						<li><a href="#" title="">О компании</a></li>
 						<li><a href="#" title="">Акции</a></li>
@@ -296,11 +295,11 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-2">
+			<div class="col-lg-2 col-sm-12">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-12 col-sm-4">
 						<p class="title-sm text-center">Способы доставки</p>
-						<div class="d-flex flex-wrap justify-content-between">
+						<div class="d-flex flex-wrap justify-content-center justify-content-sm-start justify-content-lg-between">
 							<div class="box-w">
 								<img src="/images/delivery/cdek.png" alt="" />
 							</div>
@@ -318,9 +317,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-sm-4">
 						<p class="title-sm text-center">Способы оплаты</p>
-						<div class="d-flex flex-wrap justify-content-between">
+						<div class="d-flex flex-wrap justify-content-center justify-content-sm-start justify-content-lg-between">
 							<div class="box-w">
 								<img src="/images/payment/mir.png" alt="Мир" />
 							</div>
@@ -334,9 +333,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="social col-1">
+			<div class="social col-lg-1 col-md-12">
 				<p class="title-sm text-center">Мы в соцсетях</p>
-				<div class="social__box d-flex flex-wrap justify-content-between">
+				<div class="social__box d-flex flex-wrap justify-content-center justify-content-md-start">
 					<a href="#" title="" target="_blank"><img src="/template/images/social/ok.png" alt="Одноклассники" width="38" height="38" /></a>
 					<a href="#" title="" target="_blank"><img src="/template/images/social/vk.png" alt="Вконтакте" width="38" height="38" /></a>
 					<a href="#" title="" target="_blank"><img src="/template/images/social/fb.png" alt="Facebook" width="38" height="38" /></a>
@@ -362,13 +361,13 @@
 <footer class="footer">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-5">
+			<div class="col-lg-5 col-md-4 col-sm-12">
 				<div class="copyright">© 2018 г. - <a href="/" title="">Recoveryline</a> - Интернет-магазин лекарственных препаратов</div>
 			</div>
-			<div class="col-2 text-right">
+			<div class="col-lg-2 col-md-2 col-sm-12 text-md-right">
 				 <a href="https://kreotif.com" target="_blank" title="Digital Agency Kreotif" class="kreotif">создание сайта Digital Agency Kreotif</a>
 			</div>
-			 <div class="col-1 kreotif-logo">
+			 <div class="col-lg-1 col-md-2 kreotif-logo">
 			 	 <div>
 					 <img src="/template/images/kreotif.png" alt="kreotif" />
 			 	 </div>
