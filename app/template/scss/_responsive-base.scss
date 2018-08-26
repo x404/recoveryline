@@ -136,6 +136,9 @@
 			text-align: center !important;
 		}
 	}
+	.header__contacts{
+		padding-left: 0;
+	}
 }
 
 
@@ -170,6 +173,9 @@
 
 	.share{
 		text-align: center;
+		&:before{
+			width: 100%;
+		}
 	}
 
 	#totop{

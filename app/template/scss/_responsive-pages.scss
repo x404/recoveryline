@@ -21,8 +21,18 @@
 		margin-right: 3.1rem;
 	}
 
-	.producer__link{
-		// margin-bottom: 2rem;
+	.articles__list{
+		justify-content: center;
+		& > div{
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+	}
+
+	.pagination{
+		ul{
+			
+		}
 	}
 }
 
@@ -54,7 +64,7 @@
 }
 
 
-@media (max-width: 570px){
+@media (max-width: 576px){
 	#home-carousel{
 		.slide{
 			.text1{
@@ -69,9 +79,21 @@
 
 	.text,
 	.about,
-	.recommendation{
+	.recommendation,
+	.main main
+	{
 		text-align: justify;
 	}
+
+	main{
+		h1,
+		h2,
+		h3
+		{
+			text-align: center;
+		}
+	}
+
 }
 
 

@@ -4064,6 +4064,7 @@ label.error {
   margin: 2rem 0 1.5rem; }
   .breadcrumbs ul {
     display: flex;
+    flex-wrap: wrap;
     text-transform: lowercase;
     padding-left: 0; }
     .breadcrumbs ul li {
@@ -4125,12 +4126,13 @@ main h2 {
   font-family: "SegoeUIBoldItalic"; }
   .pagination.topline {
     margin-top: 1rem;
-    padding-top: 3.2rem; }
+    padding-top: 2.8rem; }
   .pagination ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; }
     .pagination ul li {
-      margin: 0 .5rem; }
+      margin: .5rem; }
   .pagination a, .pagination span {
     background-color: #b3b3b3;
     border-radius: 2px;
@@ -4150,7 +4152,7 @@ main h2 {
 /* =delivery
 ---------------------------*/
 .companies__list {
-  margin: 3.5rem 0 5rem;
+  margin: 3.5rem 0;
   padding-top: 3rem; }
   .companies__list .title {
     font-size: 1.8rem;
@@ -4159,7 +4161,8 @@ main h2 {
 .company__link {
   border: 1px solid #e6e6e6;
   height: 8.5rem;
-  width: 20rem; }
+  width: 20rem;
+  margin-bottom: 1.5rem; }
   .company__link:hover {
     border: 1px solid #064ca1; }
 
@@ -5302,7 +5305,9 @@ aside {
   .bottom .manual-menu ul:nth-child(3) {
     display: block; }
   .bottom .title-sm {
-    text-align: center !important; } }
+    text-align: center !important; }
+  .header__contacts {
+    padding-left: 0; } }
 
 @media (max-width: 450px) {
   .header .logo {
@@ -5320,6 +5325,8 @@ aside {
     text-align: center; }
   .share {
     text-align: center; }
+    .share:before {
+      width: 100%; }
   #totop {
     right: 0;
     top: -33px; } }
@@ -5343,7 +5350,12 @@ aside {
   .goods {
     justify-content: center; }
   .recommendation .card:nth-child(5n) {
-    margin-right: 3.1rem; } }
+    margin-right: 3.1rem; }
+  .articles__list {
+    justify-content: center; }
+    .articles__list > div {
+      margin-left: 1rem;
+      margin-right: 1rem; } }
 
 @media (max-width: 991px) {
   .services__row {
@@ -5359,7 +5371,7 @@ aside {
     top: 40%;
     width: 98%; } }
 
-@media (max-width: 570px) {
+@media (max-width: 576px) {
   #home-carousel .slide .text1 {
     top: 10%; }
   #home-carousel .slide .text2 {
@@ -5367,8 +5379,13 @@ aside {
     width: 98%; }
   .text,
   .about,
-  .recommendation {
-    text-align: justify; } }
+  .recommendation,
+  .main main {
+    text-align: justify; }
+  main h1,
+  main h2,
+  main h3 {
+    text-align: center; } }
 
 @media (max-width: 480px) {
   .slide .text1 {
