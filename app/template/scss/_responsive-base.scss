@@ -1,14 +1,101 @@
 @media (max-width: 1199px){
+	.qcart{
+		&__content{
+			padding-right: 1.5rem;
+		}
+		a{
+			margin-left: 0;
+			&:before{
+				left: -40px;
+			}
+		}
+	}
 }
 
 @media (max-width: 1024px){
 }
 
 @media (max-width: 991px){
+	.header{
+		ul.mainnav{
+			margin-bottom: 1.5rem;
+			justify-content: space-around;
+		}
+		&__contacts{
+			text-align: center;
+			padding-top: 1.5rem;
+			padding-left: 6rem;
+		}
+	}
+
+	.sisea-search-form{
+		position: relative;
+		left: 50px;
+	}
+
+	.menu2__wrapper .subnav{
+		top: 72px;
+	}
 }
 
 @media (max-width: 767px){
+	.sisea-search-form{
+		left: 0;
+	}
+	.header{
+		padding-top: .5rem;
+	}
+	.neck{
+		padding: 1rem 0;
+		&__menu{
+			display: none !important;
+		}
+
+		.qcart{
+			justify-content: space-around !important;
+			padding-top: 1rem;
+			a{
+				margin-left: 3rem;
+			}
+
+			&__content{
+				padding-left: 0;
+			}
+		}
+	}
 }
 
-@media (max-width: 545px){
+@media (max-width: 450px){
+	.header{
+		.logo{
+			text-align: center;
+			img{
+				max-width: 80%
+			}
+		}
+	}
+}
+
+
+@media (max-width: 380px){
+	.header{
+		.logo{
+			margin-left: 20px;
+			img{
+				max-width: 70%
+			}
+		}
+	}
+}
+
+@media (max-width: 340px){
+	.header{
+		padding-top: 1rem;
+		.logo{
+			margin-left: 50px;
+			img{
+				max-width: 75%
+			}
+		}
+	}
 }
