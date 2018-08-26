@@ -5366,7 +5366,27 @@ aside {
   .aside-content .goods {
     flex-grow: 1;
     margin-left: 1rem;
-    width: auto; } }
+    width: auto; }
+  .card__details {
+    flex-wrap: wrap; }
+  .card__gallery {
+    margin: auto; }
+  .card__description {
+    margin-top: 1rem; }
+    .card__description .price {
+      display: block;
+      margin: 0 auto;
+      width: 15rem; }
+    .card__description .count-cost {
+      justify-content: center; }
+    .card__description .tocart {
+      justify-content: center; }
+      .card__description .tocart .btn-order-one-click {
+        width: 185px;
+        display: block;
+        margin-right: 0; }
+  .group-btn {
+    min-width: 0; } }
 
 @media (max-width: 991px) {
   .services__row {
@@ -5387,7 +5407,11 @@ aside {
     #filters .group-btn {
       margin-bottom: 1rem; }
   .aside-content .card {
-    margin-right: .9rem; } }
+    margin-right: .9rem; }
+  .card__tabs {
+    margin-top: 1rem; }
+    .card__tabs .nav-tabs {
+      flex-wrap: wrap; } }
 
 @media (max-width: 767px) {
   #home-carousel .slide .text1 {
@@ -5398,7 +5422,10 @@ aside {
   aside {
     display: none; }
   .aside-content .goods {
-    margin-left: 6rem; } }
+    margin-left: 6rem; }
+  .aside-content .card {
+    margin-left: auto;
+    margin-right: auto !important; } }
 
 @media (max-width: 576px) {
   #home-carousel .slide .text1 {
@@ -5431,7 +5458,22 @@ aside {
     .page-error .box {
       float: none;
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto; }
+  .card__description .price {
+    padding-left: 0;
+    padding-right: 0; }
+  .card__info {
+    margin-left: 0; }
+  #order-one-click .modal-dialog {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; } }
+
+@media (max-width: 520px) {
+  .card__mainimg {
+    width: auto; }
+    .card__mainimg #mainimg {
+      max-width: 92%; } }
 
 @media (max-width: 490px) {
   .aside-content .goods {
@@ -5446,7 +5488,11 @@ aside {
       justify-content: center; }
   .card {
     margin-left: 1rem;
-    margin-right: 1rem !important; } }
+    margin-right: 1rem !important; }
+    .card__gallery {
+      overflow: hidden; }
+  .card__thumbs {
+    width: 75%; } }
 
 @media (max-width: 460px) {
   #home-carousel {
@@ -5466,3 +5512,9 @@ aside {
   .text iframe {
     max-width: 100%;
     height: auto; } }
+
+@media (max-width: 400px) {
+  .card__description .tocart {
+    display: block !important; }
+    .card__description .tocart .btn {
+      margin: 1rem auto; } }

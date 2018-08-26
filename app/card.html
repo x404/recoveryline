@@ -257,8 +257,6 @@
 				<li>-</li>
 				<li><a href="/" title="">препараты для спортсменов</a></li>
 				<li>-</li>
-				<li><a href="/" title="">Orthomol Veg one</a></li>
-				<li>-</li>
 				<li class="active">Orthomol Veg one</li>
 			</ul>
 		</div>
@@ -309,7 +307,7 @@
 									<div class="label label-hit">hit</div>
 								</div>
 							</div>
-							<div class="card__thumbs" id="card__thumbs" />
+							<div class="card__thumbs" id="card__thumbs" >
 								<div>
 									<a href="/tmp/pic1.jpg" title="" class="thumb-link thumb-link-active">
 										<img src="/images/thumb-1.jpg" alt="" />
@@ -343,9 +341,9 @@
 								<form action="#" method="post">
 									<div class="d-flex align-items-center count-cost">
 										<div class="card__count count-box d-flex">
-											<button type="button" id="minus">-</button>
+											<button type="button" id="minus" class="minus">-</button>
 											<input type="number" class="quantity" value="1" id="quantity" name="shk-count" data-price="3 090">
-											<button type="button" id="plus">+</button>
+											<button type="button" id="plus" class="plus">+</button>
 										</div>
 										<div class="eq"> = </div>
 										<div class="cost"><span class="shk-price">3 090</span> <span class="rur">i</span></div>
@@ -368,7 +366,7 @@
 
 
 				<div class="text card__tabs">
-					<ul class="nav nav-tabs d-flex" role="tablist">
+					<ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
 						<li role="presentation"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab" class="group-btn active">описание</a></li>
 						<li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab" class="group-btn">инструкция</a></li>
 						<li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab" class="group-btn">состав</a></li>
@@ -560,7 +558,7 @@
 								<div class="card-bottom d-flex align-items-center">
 									<a href="#" class="card-link">подробнее</a>
 									<form action="#" method="post" class="card-form">
-										<button type="submit" class="to-cart"></button>
+										<button type="submit" class="to-cart" aria-label="В корзину"></button>
 									</form>
 								</div>
 								<div class="card-label">
@@ -580,7 +578,7 @@
 								<div class="card-bottom d-flex align-items-center">
 									<a href="#" class="card-link">подробнее</a>
 									<form action="#" method="post" class="card-form">
-										<button type="submit" class="to-cart"></button>
+										<button type="submit" class="to-cart" aria-label="В корзину"></button>
 									</form>
 								</div>
 								<div class="card-label">
@@ -599,7 +597,7 @@
 								<div class="card-bottom d-flex align-items-center">
 									<a href="#" class="card-link">подробнее</a>
 									<form action="#" method="post" class="card-form">
-										<button type="submit" class="to-cart"></button>
+										<button type="submit" class="to-cart" aria-label="В корзину"></button>
 									</form>
 								</div>
 								<div class="card-label">
@@ -619,7 +617,7 @@
 								<div class="card-bottom d-flex align-items-center">
 									<a href="#" class="card-link">подробнее</a>
 									<form action="#" method="post" class="card-form">
-										<button type="submit" class="to-cart"></button>
+										<button type="submit" class="to-cart" aria-label="В корзину"></button>
 									</form>
 								</div>
 								<div class="card-label">
@@ -638,7 +636,7 @@
 								<div class="card-bottom d-flex align-items-center">
 									<a href="#" class="card-link">подробнее</a>
 									<form action="#" method="post" class="card-form">
-										<button type="submit" class="to-cart"></button>
+										<button type="submit" class="to-cart" aria-label="В корзину"></button>
 									</form>
 								</div>
 								<div class="card-label">
@@ -810,9 +808,9 @@
 
 							<div class="d-flex align-items-center justify-content-center count-cost">
 								<div class="card__count count-box d-flex">
-									<button type="button" id="minus">-</button>
-									<input type="number" class="quantity" value="1" id="quantity" name="shk-count" data-price="3 090">
-									<button type="button" id="plus">+</button>
+									<button type="button" class="minus">-</button>
+									<input type="number" class="quantity" value="1" name="shk-count" data-price="3 090">
+									<button type="button" class="plus">+</button>
 								</div>
 								<div class="eq"> = </div>
 								<div class="cost"><span class="shk-price">3 090</span> <span class="rur">i</span></div>

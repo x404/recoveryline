@@ -89,7 +89,23 @@ $(document).ready(function(){
 		autoplay: false,
 		autoplaySpeed: 4000,
 		adaptiveHeight: true,
-		arrows : true
+		arrows : true,
+		responsive: [
+			{
+			  breakpoint: 470,
+			  settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 430,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			  }
+			}
+	    ]
 	});
 
 	$('#similar-carousel').slick({
@@ -102,7 +118,47 @@ $(document).ready(function(){
 		autoplaySpeed: 4000,
 		adaptiveHeight: true,
 		arrows : true,
-		appendArrows : $('.prevnext')
+		appendArrows : $('.prevnext'),
+		responsive: [
+			{
+			  breakpoint: 1250,
+			  settings: {
+			    slidesToShow: 3,
+			    slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 991,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 767,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 430,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 370,
+			  settings: {
+			  	arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+		        centerMode: true,
+		        centerPadding: '40px'
+			  }
+			}
+	    ]
 	});
 
 
@@ -190,7 +246,7 @@ $(document).ready(function(){
 
 
 	// products counters
-	$('.card__count #plus').on('click', function(e){
+	$('.card__count .plus').on('click', function(e){
 		e.preventDefault();
 		var $this = $(this),
 			form = $this.closest('form'),
@@ -210,7 +266,7 @@ $(document).ready(function(){
 		submit.removeAttr('disabled');
 	});
 
-	$('.card__count #minus').on('click', function(e){
+	$('.card__count .minus').on('click', function(e){
 		e.preventDefault();
 		var $this = $(this),
 			form = $this.closest('form'),
