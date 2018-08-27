@@ -43,7 +43,7 @@ $color_2: #2f4f8e;
 		text-align: center;
 		top: 0;
 		width: 70px;
-		z-index: 99;
+		z-index: 9999;
 		.icon-bar{
 			background-color: $color_1;
 			display: block;
@@ -336,8 +336,6 @@ $color_2: #2f4f8e;
 			.nav-lev-1{
 				padding-right: 1.5rem;
 				& > a{
-					// font-size: 1.4rem;
-					// margin: 0;
 					&:after{
 						top: 12px;
 						right: 14px !important;

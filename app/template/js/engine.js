@@ -73,7 +73,17 @@ $(document).ready(function(){
 				slidesToShow: 1,
 				slidesToScroll: 1,
 		        centerMode: true,
-		        centerPadding: '8px'
+		        centerPadding: '15px'
+			  }
+			},
+			{
+			  breakpoint: 300,
+			  settings: {
+			  	arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+		        centerMode: true,
+		        centerPadding: '10px'
 			  }
 			}
 	    ]

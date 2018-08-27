@@ -4,7 +4,8 @@
 
 
 // safari
-_::-webkit-:host:not(:root:root), .header{
+_::-webkit-:host:not(:root:root), .close-modal svg{
+	margin-top: -6px;
 }
 
 

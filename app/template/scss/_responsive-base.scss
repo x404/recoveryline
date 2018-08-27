@@ -4,6 +4,24 @@
 			font-size: 1.2rem;
 		}
 	}
+
+	.bottom{
+		.title-sm{
+			font-size: 1.4rem;
+			margin-top: 1.5rem;
+			text-align: left !important
+		}
+		.social__box{
+			padding-left: 0;
+		}
+		.box-w,
+		.social__box a{
+			margin-right: .5rem;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 
@@ -33,8 +51,11 @@
 		&__contacts{
 			text-align: center;
 			padding-top: 1.5rem;
-			padding-left: 6rem;
 		}
+	}
+
+	.logo{
+		padding-left: 0;
 	}
 
 	.sisea-search-form{
@@ -48,24 +69,6 @@
 
 	.manual-menu{
 		flex-wrap: wrap;
-	}
-
-	.bottom{
-		.title-sm{
-			font-size: 1.4rem;
-			margin-top: 1.5rem;
-			text-align: left !important
-		}
-		.social__box{
-			padding-left: 0;
-		}
-		.box-w,
-		.social__box a{
-			margin-right: .5rem;
-			&:last-child{
-				margin-right: 0;
-			}
-		}
 	}
 }
 
@@ -104,6 +107,12 @@
 				display: none;
 			}
 		}
+
+		.social{
+			.title-sm{
+				text-align: center !important;
+			}
+		}
 	}
 
 	.kreotif-logo{
@@ -121,10 +130,14 @@
 			height: 4rem;
 		}
 	}
-
+	body{
+		display: block;
+		min-height: 0;
+	}
 }
 
 @media (max-width: 576px){
+
 	.bottom{
 		.manual-menu {
 			ul:nth-child(3){
