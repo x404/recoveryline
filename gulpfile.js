@@ -60,8 +60,7 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/popper.min.js',
 				config.templateDir + '/js/util.js',
 				config.templateDir + '/js/tab.js',
-				config.templateDir + '/js/modal.js',
-				config.templateDir + '/js/jquery.fancybox.min.js'
+				config.templateDir + '/js/modal.js'
 			]),
 			concat('libs.min.js'), // Собираем их в кучу в новом файле libs.min.js
 			uglify(), // Сжимаем JS файл
@@ -224,13 +223,26 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/css/owl.carousel.css'
 	])
 	.pipe(gulp.dest(config.destDir + '/template/css'));
+	
+	// var buildJs = gulp.src(config.templateDir + '/js/**/*').pipe(gulp.dest(config.destDir + '/template/js'));
+
+	var buildJs = gulp.src([ // Переносим CSS стили в продакшен
+		config.templateDir + '/js/cells-by-column.js',
+		config.templateDir + '/js/engine.js',
+		config.templateDir + '/js/libs.min.js',
+		config.templateDir + '/js/slick.min.js',
+		config.templateDir + '/js/isotope.pkgd.min.js'
+	])
+	.pipe(gulp.dest(config.destDir + '/template/js'));
+
+
+
 
 	var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
 	var buildHtml = gulp.src('app/*.html').pipe(gulp.dest(config.destDir + '/'));
 	var buildHtaccess = gulp.src('app/.htaccess').pipe(gulp.dest(config.destDir));
 	var buildrobots = gulp.src('app/robots.txt').pipe(gulp.dest(config.destDir));
-	var buildJs = gulp.src(config.templateDir + '/js/**/*').pipe(gulp.dest(config.destDir + '/template/js'));
-	var buildTmp = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
+	var buildImages = gulp.src('app/images/**/*').pipe(gulp.dest(config.destDir + '/images'));
 	var buildTmp = gulp.src('app/tmp/*').pipe(gulp.dest(config.destDir + '/tmp'));
 	var buildFonts = gulp.src(config.templateDir + '/fonts/**/*').pipe(gulp.dest(config.destDir + '/template/fonts')); // Переносим шрифты в продакшен
 	var buildOutdate = gulp.src('app/outdatedbrowser/**/*').pipe(gulp.dest(config.destDir + '/outdatedbrowser'));

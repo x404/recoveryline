@@ -301,10 +301,10 @@
 					<p>Когда речь зашла о вашем здоровье и благополучие, вы оказались в правильном интернет-магазине. Здесь вы найдете большой ассортимент медицинских препаратов и витаминов для Вас и вашей семьи по доступным ценам. Наш ассортимент включает в себя лекарственные средства, отпускаемые без рецепта.</p>
 
 					<div id="filters">
-						<button type="button" class="group-btn group-btn-current" data-filter="*" >все препараты (10)</button>
-						<button type="button" class="group-btn" data-filter=".sale">распродажа (4)</button>
-						<button type="button" class="group-btn" data-filter=".new">новинки (5)</button>
-						<button type="button" class="group-btn" data-filter=".hit">популярное (7)</button>
+						<button type="button" class="filter-btn filter-btn-current" data-filter="*" >все препараты (10)</button>
+						<button type="button" class="filter-btn" data-filter=".sale">распродажа (4)</button>
+						<button type="button" class="filter-btn" data-filter=".new">новинки (5)</button>
+						<button type="button" class="filter-btn" data-filter=".hit">популярное (7)</button>
 					</div>
 					<!-- =goods -->
 					<div class="goods d-flex flex-wrap grid">
@@ -746,8 +746,8 @@ $grid = $('.grid').isotope({
 $('#filters').on( 'click', 'button', function() {
 	var filterValue = $(this).attr('data-filter');
 	$grid.isotope({ filter: filterValue });	
-   $('#filters').find('.group-btn-current').removeClass('group-btn-current');
-    $(this).addClass('group-btn-current');
+   $('#filters').find('.filter-btn-current').removeClass('filter-btn-current');
+    $(this).addClass('filter-btn-current');
 });
 
 

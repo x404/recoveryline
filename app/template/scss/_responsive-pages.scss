@@ -33,7 +33,7 @@
 	#filters{
 		padding: 0 .5rem;
 		min-width: 0;
-		.group-btn{
+		.filter-btn{
 			margin-right: 1rem;
 			padding-left: .5rem;
 			padding-right: .5rem;
@@ -74,8 +74,18 @@
 			}
 		}
 	}
-	.group-btn{
+	.filter-btn{
 		min-width: 0;
+	}
+
+	.recommendation{
+		.btn-group{
+			justify-content: space-between;
+		}
+		.filter-btn{
+			flex-basis: auto;
+			width: auto;
+		}
 	}
 }
 
@@ -107,7 +117,7 @@
 	#filters{
 		flex-wrap: wrap;
 		justify-content: center;
-		.group-btn{
+		.filter-btn{
 			margin-bottom: 1rem;
 		}
 	}
@@ -239,6 +249,13 @@
 			max-width: 92%;
 		}
 	}
+
+	.recommendation{
+		.filter-btn{
+			flex-basis: auto;
+			width: 40%;
+		}
+	}
 }
 
 
@@ -287,7 +304,7 @@
 		width: 100%;
 	}
 
-	#filters .group-btn{
+	#filters .filter-btn{
 		margin-right: 0;
 	}
 	.aside-content{
@@ -305,6 +322,12 @@
 		iframe{
 			max-width: 100%;
 			height: auto;
+		}
+	}
+
+	.recommendation{
+		.filter-btn{
+			width: 100%;
 		}
 	}
 }

@@ -1,29 +1,83 @@
-.text-center{
-        text-align: center;
-}
-.justifyleft {text-align:left !important; }
-.justifyright {text-align:right !important; }
-.justifycenter {text-align: center !important; }
-.justifyfull {text-align:justify !important; }
+/* font-family: "SegoeUIRegular"; */
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-img.justifyleft, table.justifyleft {float:left; margin-right:10px;margin-bottom:5px;}
-img.justifyright, table.justifyright {float:right; margin-left:10px;margin-bottom:5px;}
-img.justifycenter, table.justifycenter { display: block; margin-left: auto; margin-right: auto;}
+/* font-family: "SegoeUIBold"; */
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-table{
-	margin: 20px 0;
-}
-.table-bordered td, .table-bordered th{
-	border: 1px solid #dee2e6;
-	padding: 5px 10px
-}
+@font-face {
+  font-family: "SegoeUIItalic";
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-th{
-	font-size: 12px;
-	font-weight: 400;
-}
+@font-face {
+  font-family: "SegoeUIBoldItalic";
+  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
+  src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"), url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
+@font-face {
+  font-family: 'als_rublregular';
+  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
-p{
-	margin: 0;
-}
+body {
+  font-family: "SegoeUIItalic";
+  color: #333; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+p {
+  line-height: 1.5;
+  margin: 0 0 6px; }
+
+h2, h3 {
+  color: #666;
+  font-weight: normal;
+  font-family: "SegoeUIRegular";
+  margin-bottom: 15px; }
+
+h2 {
+  font-size: 18px; }
+
+h3 {
+  font-size: 16px; }
+
+h1 {
+  color: #064ca1;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 12px; }
+
+ul li {
+  margin: 5px 0; }
+
+table {
+  margin: 25px 0; }
+  table td {
+    vertical-align: top; }
+
+.table-bordered td, .table-bordered th {
+  border-color: #ccc !important; }

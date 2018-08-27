@@ -88,6 +88,31 @@
 			margin-right: 0;
 		}
 	}
+
+	#filters{
+		background: none;
+		padding: 0;
+		margin-top: 3rem;
+	}
+	.filter-btn{
+		margin-right: 1rem;
+		font-size: 1.2rem;
+		white-space: nowrap;;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	.btn-group:first-child{
+		margin-bottom: 1.8rem;
+	}
+
+	.goods{
+		margin-left: 2.5rem;
+		.col{
+			
+		}
+	}
 }
 
 

@@ -343,9 +343,22 @@
 				<p>Когда речь зашла о вашем здоровье и благополучие, вы оказались в правильном интернет-магазине. Здесь вы найдете большой <a href="#" title="">ассортимент медицинских препаратов</a> и витаминов для Вас и вашей семьи по доступным ценам. Наш ассортимент включает в себя лекарственные средства, отпускаемые без рецепта.</p>
 
 
-				<div id="filters">
-					
+				<div id="filters" class="flex-column">
+					<div class="btn-group d-flex flex-wrap" role="group">
+						<button type="button" class="col filter-btn filter-btn-current" data-filter="*" >все препараты (10)</button>
+						<button type="button" class="col filter-btn" data-filter=".sale">распродажа препаратов (4)</button>
+						<button type="button" class="col filter-btn" data-filter=".new">новинки препаратов (5)</button>
+						<button type="button" class="col filter-btn" data-filter=".hit">популярные препараты (7)</button>
+					</div>
+					<div class="btn-group d-flex flex-wrap" role="group">
+						<button type="button" class="col filter-btn" data-filter=".group1" >обезболивающие средства  ( 4 )</button>
+						<button type="button" class="col filter-btn" data-filter=".group2">внутрисуставные инъекции ( 5 )</button>
+						<button type="button" class="col filter-btn" data-filter=".group3">спортивное восстановление ( 3 )</button>
+						<button type="button" class="col filter-btn" data-filter=".group4">коленный сустав ( 7 )</button>
+						<button type="button" class="col filter-btn" data-filter=".group5">препараты для глаз ( 4 )</button>
+					</div>
 				</div>
+
 				<!-- =goods -->
 				<div class="goods d-flex flex-wrap">
 					<div class="card">
