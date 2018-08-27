@@ -404,9 +404,10 @@
 
 	&__gallery{
 		#mainimg{
-			transition: .3s opacity;
+			align-self: flex-start;
 			max-width: 100%;
 			height: auto;
+			transition: .3s opacity;
 		}
 	}
 
@@ -458,7 +459,9 @@
 	$bc:  $color17;
 
 	#minus, 
-	#plus{
+	#plus,
+	.minus,
+	.plus{
 		background-color: $color2;
 		border: 1px solid $bc;
 		font-size: 1.8rem;

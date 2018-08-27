@@ -245,6 +245,22 @@ $(document).ready(function(){
 	}); 
 
 
+
+	$('#order-one-click-form').validate({
+		submitHandler: function(form){
+			var strSubmit=$(form).serialize();
+			$(form).append('<div class="sending">Идет отправка ...</div>');
+			$.ajax({type: "POST",url: $(form).attr('action'),data: strSubmit,
+				success: function(){
+					document.querySelector('.sending').remove();
+					$('#order-one-click-form').append(thankcallback);
+					startClock('order-one-click-form');
+				}
+			}).fail(function(error){alert(errorTxt)});
+		}
+	}); 	
+
+
 	// products counters
 	$('.card__count .plus').on('click', function(e){
 		e.preventDefault();

@@ -10,9 +10,38 @@ _::-webkit-:host:not(:root:root), .header{
 
 // edge
 @supports (-ms-ime-align:auto) {
+	.card-img{
+		align-self: flex-start;
+	}
 }
 
 
 //ie11
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.producer__link{
+		img{
+			margin: 0;
+		}
+	}
+
+	.close-modal svg{
+		position: relative;
+		left: -2px;
+	}
+
+	.card-img{
+		align-self: flex-start;
+		height: auto;
+		width: 60%;
+		max-width: 115px;
+		display: block;
+	}
+
+	.card__gallery #mainimg{
+		width: 100%;
+	}
+
+	.card__mainimg{
+		padding: 0;
+	}
 }
